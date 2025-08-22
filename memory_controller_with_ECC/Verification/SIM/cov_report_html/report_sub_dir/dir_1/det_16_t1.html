@@ -1,0 +1,693 @@
+<HTML>
+<HEAD>
+<link type="text/css" rel="stylesheet" href="../../imc.css"></link>
+<script type="text/javascript" src="../../sortable.js"></script>
+<TITLE>IMC Report: ./cov_report_html</TITLE></HEAD>
+<BODY>
+<A NAME="_topcov"></A>
+<P class="summary_title">Coverage   Summary Report, Instance-Based</P>
+
+<P class="fs"><A STYLE="float: left" class="namet" HREF="../../index.html">Top Level Summary</A><A STYLE="float: right" class="namet" HREF="../../legend.html">Legend and Help</A></P>
+<BR>
+<TABLE class="detail_header"><TR class="detail"><TD>
+
+<B>Instance name: </B><A HREF="../dir_1/summ_5_t1.html" class="namet">zmc_axi4_top</A><A HREF="../dir_1/summ_7_t1.html" class="namet">.mem_ctrl_inst</A><A HREF="../dir_1/summ_15_t1.html" class="namet">.CSR_registers_inst</A>.u_adapter<BR>
+
+<B>Type name: </B>rggen_apb_adapter<BR>
+
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_apb_adapter.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_apb_adapter.v</A><BR>
+
+</TD></TR></TABLE>
+
+<BR>
+<P class="subtitle">Coverage Summary Report, Instance-Based</P>
+<TABLE class="sortable sml summary_table" id="totalTable">
+
+
+<TR><TH class="wht">Overall</TH>
+<TH class="wht">Overall Covered</TH>
+<TH class="wht">Block</TH>
+<TH class="wht">Expression</TH>
+<TH class="wht">Toggle</TH>
+<TH class="wht">FSM&nbsp;State</TH>
+<TH class="wht">FSM&nbsp;Transition</TH>
+<TH class="wht">Assertion</TH>
+<TH class="wht">CoverGroup</TH>
+<TH class="wht">CoverGroup Covered</TH>
+<TH class="wht">name</TH>
+
+</TR>
+
+<TR><TD class="range60to64"><A HREF="">63.12%</A></TD>
+<TD class="range10to14"><A HREF="">11.11%&nbsp;(63/567)</A></TD>
+<TD class="range100"><A HREF="#_Blockcov">100.00%&nbsp;(13/13)</A></TD>
+<TD class="range80to84"><A HREF="#_Expressioncov">81.82%&nbsp;(9/11)</A></TD>
+<TD class="range05to09"><A HREF="#_Togglecov">7.55%&nbsp;(41/543)</A></TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="namecell">u_adapter</TD>
+
+</TR>
+
+
+</TABLE>
+<A NAME="_Blockcov"></A>
+<P class="detail_title">     Uncovered Block Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.mem_ctrl_inst.CSR_registers_inst.u_adapter<BR>
+<B>Type name: </B>rggen_apb_adapter<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_apb_adapter.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_apb_adapter.v</A><BR><B>Number of uncovered blocks: </B>0 of 13<BR>
+<B>Number of unreachable blocks: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Count  Block Line  Kind                 Origin Source Code                    
+------------------------------------------------------------------------------
+
+0 items found
+
+</PRE>
+<A NAME="_Expressioncov"></A>
+<P class="detail_title">     Uncovered Expression Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.mem_ctrl_inst.CSR_registers_inst.u_adapter<BR>
+<B>Type name: </B>rggen_apb_adapter<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_apb_adapter.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_apb_adapter.v</A><BR><B>Number of uncovered expressions: </B>2 of 11<BR>
+<B>Number of unreachable expressions: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+index  | grade         | line   | expression                                         
+-------------------------------------------------------------------------------------
+3.1    | 66.67% (2/3)  | 61     | w_bus_valid && w_bus_ready                         
+4.1    | 66.67% (2/3)  | 66     | w_bus_valid && w_bus_ready                         
+
+<B>index: </B><B>3.1</B><B> grade: </B><B>66.67% (2/3)</B><B> line: </B><B>61</B><B> source: </B><B>r_pready  <= w_bus_valid && w_bus_ready;</B>
+
+w_bus_valid && w_bus_ready<BR>
+<B><</B>----<B>1</B>----<B>></B>    <B><</B>----<B>2</B>----<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+---------------------------- '&&'
+3.1.2     | 0     | -   0   
+
+<B>index: </B><B>4.1</B><B> grade: </B><B>66.67% (2/3)</B><B> line: </B><B>66</B><B> source: </B><B>if (w_bus_valid && w_bus_ready) begin</B>
+
+w_bus_valid && w_bus_ready<BR>
+<B><</B>----<B>1</B>----<B>></B>    <B><</B>----<B>2</B>----<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+---------------------------- '&&'
+4.1.2     | 0     | -   0   
+
+
+</PRE>
+<A NAME="_Togglecov"></A>
+<P class="detail_title">     Uncovered Toggle Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.mem_ctrl_inst.CSR_registers_inst.u_adapter<BR>
+<B>Type name: </B>rggen_apb_adapter<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_apb_adapter.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_apb_adapter.v</A><BR><B>Number of uncovered signal bits: </B>502 of 543<BR>
+<B>Number of unreachable signal bits: </B>0<BR>
+<B>Number of signal bits partially toggled(rise): </B>8 of 543<BR>
+<B>Number of signal bits partially toggled(fall): </B>0 of 543<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Hit(Full)  Hit(Rise)  Hit(Fall)  Signal                    
+-----------------------------------------------------------
+0          1          0          i_rst_n                   
+0          0          0          i_paddr[9]                
+0          0          0          i_paddr[8]                
+0          0          0          i_paddr[7]                
+0          0          0          i_paddr[6]                
+0          0          0          i_paddr[5]                
+0          0          0          i_paddr[4]                
+0          0          0          i_paddr[1]                
+0          0          0          i_paddr[0]                
+0          0          0          i_pprot[2]                
+0          0          0          i_pprot[1]                
+0          0          0          i_pprot[0]                
+0          0          0          i_pwdata[31]              
+0          0          0          i_pwdata[30]              
+0          0          0          i_pwdata[29]              
+0          0          0          i_pwdata[28]              
+0          0          0          i_pwdata[27]              
+0          0          0          i_pwdata[26]              
+0          0          0          i_pwdata[25]              
+0          0          0          i_pwdata[24]              
+0          0          0          i_pwdata[23]              
+0          0          0          i_pwdata[22]              
+0          0          0          i_pwdata[21]              
+0          0          0          i_pwdata[20]              
+0          0          0          i_pwdata[19]              
+0          0          0          i_pwdata[18]              
+0          0          0          i_pwdata[17]              
+0          0          0          i_pwdata[16]              
+0          0          0          i_pwdata[15]              
+0          0          0          i_pwdata[14]              
+0          0          0          i_pwdata[13]              
+0          0          0          i_pwdata[12]              
+0          0          0          i_pwdata[11]              
+0          0          0          i_pwdata[10]              
+0          0          0          i_pwdata[9]               
+0          0          0          i_pwdata[8]               
+0          0          0          i_pwdata[7]               
+0          0          0          i_pwdata[6]               
+0          0          0          i_pwdata[5]               
+0          0          0          i_pwdata[4]               
+0          0          0          i_pwdata[3]               
+0          0          0          i_pwdata[2]               
+0          0          0          o_prdata[31]              
+0          0          0          o_prdata[30]              
+0          0          0          o_prdata[29]              
+0          0          0          o_prdata[28]              
+0          0          0          o_prdata[27]              
+0          0          0          o_prdata[26]              
+0          0          0          o_prdata[25]              
+0          0          0          o_prdata[24]              
+0          0          0          o_prdata[23]              
+0          0          0          o_prdata[22]              
+0          0          0          o_prdata[21]              
+0          0          0          o_prdata[20]              
+0          0          0          o_prdata[19]              
+0          0          0          o_prdata[18]              
+0          0          0          o_prdata[17]              
+0          0          0          o_prdata[16]              
+0          0          0          o_prdata[15]              
+0          0          0          o_prdata[14]              
+0          0          0          o_prdata[13]              
+0          0          0          o_prdata[12]              
+0          0          0          o_prdata[11]              
+0          0          0          o_prdata[10]              
+0          0          0          o_prdata[9]               
+0          0          0          o_prdata[8]               
+0          0          0          o_prdata[7]               
+0          0          0          o_prdata[6]               
+0          0          0          o_prdata[5]               
+0          0          0          o_prdata[4]               
+0          0          0          o_prdata[3]               
+0          0          0          o_prdata[2]               
+0          1          0          o_prdata[1]               
+0          0          0          o_prdata[0]               
+0          0          0          o_pslverr                 
+0          0          0          o_register_access[1]      
+0          0          0          o_register_address[9]     
+0          0          0          o_register_address[8]     
+0          0          0          o_register_address[7]     
+0          0          0          o_register_address[6]     
+0          0          0          o_register_address[5]     
+0          0          0          o_register_address[4]     
+0          0          0          o_register_address[1]     
+0          0          0          o_register_address[0]     
+0          0          0          o_register_write_data[31] 
+0          0          0          o_register_write_data[30] 
+0          0          0          o_register_write_data[29] 
+0          0          0          o_register_write_data[28] 
+0          0          0          o_register_write_data[27] 
+0          0          0          o_register_write_data[26] 
+0          0          0          o_register_write_data[25] 
+0          0          0          o_register_write_data[24] 
+0          0          0          o_register_write_data[23] 
+0          0          0          o_register_write_data[22] 
+0          0          0          o_register_write_data[21] 
+0          0          0          o_register_write_data[20] 
+0          0          0          o_register_write_data[19] 
+0          0          0          o_register_write_data[18] 
+0          0          0          o_register_write_data[17] 
+0          0          0          o_register_write_data[16] 
+0          0          0          o_register_write_data[15] 
+0          0          0          o_register_write_data[14] 
+0          0          0          o_register_write_data[13] 
+0          0          0          o_register_write_data[12] 
+0          0          0          o_register_write_data[11] 
+0          0          0          o_register_write_data[10] 
+0          0          0          o_register_write_data[9]  
+0          0          0          o_register_write_data[8]  
+0          0          0          o_register_write_data[7]  
+0          0          0          o_register_write_data[6]  
+0          0          0          o_register_write_data[5]  
+0          0          0          o_register_write_data[4]  
+0          0          0          o_register_write_data[3]  
+0          0          0          o_register_write_data[2]  
+0          0          0          i_register_active[7]      
+0          0          0          i_register_active[6]      
+0          0          0          i_register_active[5]      
+0          0          0          i_register_active[4]      
+0          0          0          i_register_active[3]      
+0          0          0          i_register_ready[7]       
+0          0          0          i_register_ready[6]       
+0          0          0          i_register_ready[5]       
+0          0          0          i_register_ready[4]       
+0          0          0          i_register_ready[3]       
+0          0          0          i_register_status[15]     
+0          0          0          i_register_status[14]     
+0          0          0          i_register_status[13]     
+0          0          0          i_register_status[12]     
+0          0          0          i_register_status[11]     
+0          0          0          i_register_status[10]     
+0          0          0          i_register_status[9]      
+0          0          0          i_register_status[8]      
+0          0          0          i_register_status[7]      
+0          0          0          i_register_status[6]      
+0          0          0          i_register_status[5]      
+0          0          0          i_register_status[4]      
+0          0          0          i_register_status[3]      
+0          0          0          i_register_status[2]      
+0          0          0          i_register_status[1]      
+0          0          0          i_register_status[0]      
+0          0          0          i_register_read_data[255] 
+0          0          0          i_register_read_data[254] 
+0          0          0          i_register_read_data[253] 
+0          0          0          i_register_read_data[252] 
+0          0          0          i_register_read_data[251] 
+0          0          0          i_register_read_data[250] 
+0          0          0          i_register_read_data[249] 
+0          0          0          i_register_read_data[248] 
+0          0          0          i_register_read_data[247] 
+0          0          0          i_register_read_data[246] 
+0          0          0          i_register_read_data[245] 
+0          0          0          i_register_read_data[244] 
+0          0          0          i_register_read_data[243] 
+0          0          0          i_register_read_data[242] 
+0          0          0          i_register_read_data[241] 
+0          0          0          i_register_read_data[240] 
+0          0          0          i_register_read_data[239] 
+0          0          0          i_register_read_data[238] 
+0          0          0          i_register_read_data[237] 
+0          0          0          i_register_read_data[236] 
+0          0          0          i_register_read_data[235] 
+0          0          0          i_register_read_data[234] 
+0          0          0          i_register_read_data[233] 
+0          0          0          i_register_read_data[232] 
+0          0          0          i_register_read_data[231] 
+0          0          0          i_register_read_data[230] 
+0          0          0          i_register_read_data[229] 
+0          0          0          i_register_read_data[228] 
+0          0          0          i_register_read_data[227] 
+0          0          0          i_register_read_data[226] 
+0          0          0          i_register_read_data[225] 
+0          0          0          i_register_read_data[224] 
+0          0          0          i_register_read_data[223] 
+0          0          0          i_register_read_data[222] 
+0          0          0          i_register_read_data[221] 
+0          0          0          i_register_read_data[220] 
+0          0          0          i_register_read_data[219] 
+0          0          0          i_register_read_data[218] 
+0          0          0          i_register_read_data[217] 
+0          0          0          i_register_read_data[216] 
+0          0          0          i_register_read_data[215] 
+0          0          0          i_register_read_data[214] 
+0          0          0          i_register_read_data[213] 
+0          0          0          i_register_read_data[212] 
+0          0          0          i_register_read_data[211] 
+0          0          0          i_register_read_data[210] 
+0          0          0          i_register_read_data[209] 
+0          0          0          i_register_read_data[208] 
+0          0          0          i_register_read_data[207] 
+0          0          0          i_register_read_data[206] 
+0          0          0          i_register_read_data[205] 
+0          0          0          i_register_read_data[204] 
+0          0          0          i_register_read_data[203] 
+0          0          0          i_register_read_data[202] 
+0          0          0          i_register_read_data[201] 
+0          0          0          i_register_read_data[200] 
+0          0          0          i_register_read_data[199] 
+0          0          0          i_register_read_data[198] 
+0          0          0          i_register_read_data[197] 
+0          0          0          i_register_read_data[196] 
+0          0          0          i_register_read_data[195] 
+0          0          0          i_register_read_data[194] 
+0          0          0          i_register_read_data[193] 
+0          0          0          i_register_read_data[192] 
+0          0          0          i_register_read_data[191] 
+0          0          0          i_register_read_data[190] 
+0          0          0          i_register_read_data[189] 
+0          0          0          i_register_read_data[188] 
+0          0          0          i_register_read_data[187] 
+0          0          0          i_register_read_data[186] 
+0          0          0          i_register_read_data[185] 
+0          0          0          i_register_read_data[184] 
+0          0          0          i_register_read_data[183] 
+0          0          0          i_register_read_data[182] 
+0          0          0          i_register_read_data[181] 
+0          0          0          i_register_read_data[180] 
+0          0          0          i_register_read_data[179] 
+0          0          0          i_register_read_data[178] 
+0          0          0          i_register_read_data[177] 
+0          0          0          i_register_read_data[176] 
+0          0          0          i_register_read_data[175] 
+0          0          0          i_register_read_data[174] 
+0          0          0          i_register_read_data[173] 
+0          0          0          i_register_read_data[172] 
+0          0          0          i_register_read_data[171] 
+0          0          0          i_register_read_data[170] 
+0          0          0          i_register_read_data[169] 
+0          0          0          i_register_read_data[168] 
+0          0          0          i_register_read_data[167] 
+0          0          0          i_register_read_data[166] 
+0          0          0          i_register_read_data[165] 
+0          0          0          i_register_read_data[164] 
+0          0          0          i_register_read_data[163] 
+0          0          0          i_register_read_data[162] 
+0          0          0          i_register_read_data[161] 
+0          0          0          i_register_read_data[160] 
+0          0          0          i_register_read_data[159] 
+0          0          0          i_register_read_data[158] 
+0          0          0          i_register_read_data[157] 
+0          0          0          i_register_read_data[156] 
+0          0          0          i_register_read_data[155] 
+0          0          0          i_register_read_data[154] 
+0          0          0          i_register_read_data[153] 
+0          0          0          i_register_read_data[152] 
+0          0          0          i_register_read_data[151] 
+0          0          0          i_register_read_data[150] 
+0          0          0          i_register_read_data[149] 
+0          0          0          i_register_read_data[148] 
+0          0          0          i_register_read_data[147] 
+0          0          0          i_register_read_data[146] 
+0          0          0          i_register_read_data[145] 
+0          0          0          i_register_read_data[144] 
+0          0          0          i_register_read_data[143] 
+0          0          0          i_register_read_data[142] 
+0          0          0          i_register_read_data[141] 
+0          0          0          i_register_read_data[140] 
+0          0          0          i_register_read_data[139] 
+0          0          0          i_register_read_data[138] 
+0          0          0          i_register_read_data[137] 
+0          0          0          i_register_read_data[136] 
+0          0          0          i_register_read_data[135] 
+0          0          0          i_register_read_data[134] 
+0          0          0          i_register_read_data[133] 
+0          0          0          i_register_read_data[132] 
+0          0          0          i_register_read_data[131] 
+0          0          0          i_register_read_data[130] 
+0          0          0          i_register_read_data[129] 
+0          0          0          i_register_read_data[128] 
+0          0          0          i_register_read_data[127] 
+0          0          0          i_register_read_data[126] 
+0          0          0          i_register_read_data[125] 
+0          0          0          i_register_read_data[124] 
+0          0          0          i_register_read_data[123] 
+0          0          0          i_register_read_data[122] 
+0          0          0          i_register_read_data[121] 
+0          0          0          i_register_read_data[120] 
+0          0          0          i_register_read_data[119] 
+0          0          0          i_register_read_data[118] 
+0          0          0          i_register_read_data[117] 
+0          0          0          i_register_read_data[116] 
+0          0          0          i_register_read_data[115] 
+0          0          0          i_register_read_data[114] 
+0          0          0          i_register_read_data[113] 
+0          0          0          i_register_read_data[112] 
+0          0          0          i_register_read_data[111] 
+0          0          0          i_register_read_data[110] 
+0          0          0          i_register_read_data[109] 
+0          0          0          i_register_read_data[108] 
+0          0          0          i_register_read_data[107] 
+0          0          0          i_register_read_data[106] 
+0          0          0          i_register_read_data[105] 
+0          0          0          i_register_read_data[104] 
+0          0          0          i_register_read_data[103] 
+0          0          0          i_register_read_data[102] 
+0          0          0          i_register_read_data[101] 
+0          0          0          i_register_read_data[100] 
+0          0          0          i_register_read_data[99]  
+0          0          0          i_register_read_data[98]  
+0          0          0          i_register_read_data[97]  
+0          0          0          i_register_read_data[96]  
+0          0          0          i_register_read_data[95]  
+0          0          0          i_register_read_data[94]  
+0          0          0          i_register_read_data[93]  
+0          0          0          i_register_read_data[92]  
+0          0          0          i_register_read_data[91]  
+0          0          0          i_register_read_data[90]  
+0          0          0          i_register_read_data[89]  
+0          0          0          i_register_read_data[88]  
+0          0          0          i_register_read_data[87]  
+0          0          0          i_register_read_data[86]  
+0          0          0          i_register_read_data[85]  
+0          0          0          i_register_read_data[84]  
+0          0          0          i_register_read_data[83]  
+0          0          0          i_register_read_data[82]  
+0          0          0          i_register_read_data[81]  
+0          0          0          i_register_read_data[80]  
+0          0          0          i_register_read_data[79]  
+0          0          0          i_register_read_data[78]  
+0          0          0          i_register_read_data[77]  
+0          0          0          i_register_read_data[76]  
+0          0          0          i_register_read_data[75]  
+0          0          0          i_register_read_data[74]  
+0          0          0          i_register_read_data[73]  
+0          0          0          i_register_read_data[72]  
+0          0          0          i_register_read_data[71]  
+0          0          0          i_register_read_data[70]  
+0          0          0          i_register_read_data[69]  
+0          0          0          i_register_read_data[68]  
+0          0          0          i_register_read_data[67]  
+0          0          0          i_register_read_data[66]  
+0          0          0          i_register_read_data[65]  
+0          1          0          i_register_read_data[64]  
+0          0          0          i_register_read_data[63]  
+0          0          0          i_register_read_data[62]  
+0          0          0          i_register_read_data[61]  
+0          0          0          i_register_read_data[60]  
+0          0          0          i_register_read_data[59]  
+0          0          0          i_register_read_data[58]  
+0          0          0          i_register_read_data[57]  
+0          0          0          i_register_read_data[56]  
+0          0          0          i_register_read_data[55]  
+0          0          0          i_register_read_data[54]  
+0          0          0          i_register_read_data[53]  
+0          0          0          i_register_read_data[52]  
+0          0          0          i_register_read_data[51]  
+0          0          0          i_register_read_data[50]  
+0          0          0          i_register_read_data[49]  
+0          0          0          i_register_read_data[48]  
+0          0          0          i_register_read_data[47]  
+0          0          0          i_register_read_data[46]  
+0          0          0          i_register_read_data[45]  
+0          0          0          i_register_read_data[44]  
+0          0          0          i_register_read_data[43]  
+0          0          0          i_register_read_data[42]  
+0          0          0          i_register_read_data[41]  
+0          0          0          i_register_read_data[40]  
+0          0          0          i_register_read_data[39]  
+0          0          0          i_register_read_data[38]  
+0          0          0          i_register_read_data[37]  
+0          0          0          i_register_read_data[36]  
+0          0          0          i_register_read_data[35]  
+0          0          0          i_register_read_data[34]  
+0          0          0          i_register_read_data[33]  
+0          1          0          i_register_read_data[32]  
+0          0          0          i_register_read_data[31]  
+0          0          0          i_register_read_data[30]  
+0          0          0          i_register_read_data[29]  
+0          0          0          i_register_read_data[28]  
+0          0          0          i_register_read_data[27]  
+0          0          0          i_register_read_data[26]  
+0          0          0          i_register_read_data[25]  
+0          0          0          i_register_read_data[24]  
+0          0          0          i_register_read_data[23]  
+0          0          0          i_register_read_data[22]  
+0          0          0          i_register_read_data[21]  
+0          0          0          i_register_read_data[20]  
+0          0          0          i_register_read_data[19]  
+0          0          0          i_register_read_data[18]  
+0          0          0          i_register_read_data[17]  
+0          0          0          i_register_read_data[16]  
+0          0          0          i_register_read_data[15]  
+0          0          0          i_register_read_data[14]  
+0          0          0          i_register_read_data[13]  
+0          0          0          i_register_read_data[12]  
+0          0          0          i_register_read_data[11]  
+0          0          0          i_register_read_data[10]  
+0          0          0          i_register_read_data[9]   
+0          0          0          i_register_read_data[8]   
+0          0          0          i_register_read_data[7]   
+0          0          0          i_register_read_data[6]   
+0          0          0          i_register_read_data[5]   
+0          0          0          i_register_read_data[4]   
+0          0          0          i_register_read_data[3]   
+0          0          0          i_register_read_data[2]   
+0          1          0          i_register_read_data[1]   
+0          1          0          i_register_read_data[0]   
+0          0          0          w_bus_access[1]           
+0          0          0          w_bus_address[9]          
+0          0          0          w_bus_address[8]          
+0          0          0          w_bus_address[7]          
+0          0          0          w_bus_address[6]          
+0          0          0          w_bus_address[5]          
+0          0          0          w_bus_address[4]          
+0          0          0          w_bus_address[1]          
+0          0          0          w_bus_address[0]          
+0          0          0          w_bus_write_data[31]      
+0          0          0          w_bus_write_data[30]      
+0          0          0          w_bus_write_data[29]      
+0          0          0          w_bus_write_data[28]      
+0          0          0          w_bus_write_data[27]      
+0          0          0          w_bus_write_data[26]      
+0          0          0          w_bus_write_data[25]      
+0          0          0          w_bus_write_data[24]      
+0          0          0          w_bus_write_data[23]      
+0          0          0          w_bus_write_data[22]      
+0          0          0          w_bus_write_data[21]      
+0          0          0          w_bus_write_data[20]      
+0          0          0          w_bus_write_data[19]      
+0          0          0          w_bus_write_data[18]      
+0          0          0          w_bus_write_data[17]      
+0          0          0          w_bus_write_data[16]      
+0          0          0          w_bus_write_data[15]      
+0          0          0          w_bus_write_data[14]      
+0          0          0          w_bus_write_data[13]      
+0          0          0          w_bus_write_data[12]      
+0          0          0          w_bus_write_data[11]      
+0          0          0          w_bus_write_data[10]      
+0          0          0          w_bus_write_data[9]       
+0          0          0          w_bus_write_data[8]       
+0          0          0          w_bus_write_data[7]       
+0          0          0          w_bus_write_data[6]       
+0          0          0          w_bus_write_data[5]       
+0          0          0          w_bus_write_data[4]       
+0          0          0          w_bus_write_data[3]       
+0          0          0          w_bus_write_data[2]       
+0          0          0          w_bus_ready               
+0          0          0          w_bus_status[1]           
+0          0          0          w_bus_status[0]           
+0          0          0          w_bus_read_data[31]       
+0          0          0          w_bus_read_data[30]       
+0          0          0          w_bus_read_data[29]       
+0          0          0          w_bus_read_data[28]       
+0          0          0          w_bus_read_data[27]       
+0          0          0          w_bus_read_data[26]       
+0          0          0          w_bus_read_data[25]       
+0          0          0          w_bus_read_data[24]       
+0          0          0          w_bus_read_data[23]       
+0          0          0          w_bus_read_data[22]       
+0          0          0          w_bus_read_data[21]       
+0          0          0          w_bus_read_data[20]       
+0          0          0          w_bus_read_data[19]       
+0          0          0          w_bus_read_data[18]       
+0          0          0          w_bus_read_data[17]       
+0          0          0          w_bus_read_data[16]       
+0          0          0          w_bus_read_data[15]       
+0          0          0          w_bus_read_data[14]       
+0          0          0          w_bus_read_data[13]       
+0          0          0          w_bus_read_data[12]       
+0          0          0          w_bus_read_data[11]       
+0          0          0          w_bus_read_data[10]       
+0          0          0          w_bus_read_data[9]        
+0          0          0          w_bus_read_data[8]        
+0          0          0          w_bus_read_data[7]        
+0          0          0          w_bus_read_data[6]        
+0          0          0          w_bus_read_data[5]        
+0          0          0          w_bus_read_data[4]        
+0          0          0          w_bus_read_data[3]        
+0          0          0          w_bus_read_data[2]        
+0          1          0          w_bus_read_data[1]        
+0          0          0          r_prdata[31]              
+0          0          0          r_prdata[30]              
+0          0          0          r_prdata[29]              
+0          0          0          r_prdata[28]              
+0          0          0          r_prdata[27]              
+0          0          0          r_prdata[26]              
+0          0          0          r_prdata[25]              
+0          0          0          r_prdata[24]              
+0          0          0          r_prdata[23]              
+0          0          0          r_prdata[22]              
+0          0          0          r_prdata[21]              
+0          0          0          r_prdata[20]              
+0          0          0          r_prdata[19]              
+0          0          0          r_prdata[18]              
+0          0          0          r_prdata[17]              
+0          0          0          r_prdata[16]              
+0          0          0          r_prdata[15]              
+0          0          0          r_prdata[14]              
+0          0          0          r_prdata[13]              
+0          0          0          r_prdata[12]              
+0          0          0          r_prdata[11]              
+0          0          0          r_prdata[10]              
+0          0          0          r_prdata[9]               
+0          0          0          r_prdata[8]               
+0          0          0          r_prdata[7]               
+0          0          0          r_prdata[6]               
+0          0          0          r_prdata[5]               
+0          0          0          r_prdata[4]               
+0          0          0          r_prdata[3]               
+0          0          0          r_prdata[2]               
+0          1          0          r_prdata[1]               
+0          0          0          r_prdata[0]               
+0          0          0          r_pslverr                 
+
+</PRE>
+<A NAME="_Fsmcov"></A>
+<P class="detail_title">     Uncovered Fsm Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.mem_ctrl_inst.CSR_registers_inst.u_adapter<BR>
+<B>Type name: </B>rggen_apb_adapter<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_apb_adapter.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_apb_adapter.v</A><BR>
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+
+0 items found
+
+</PRE>
+<A NAME="_Assertioncov"></A>
+<P class="detail_title">     Uncovered Assertion Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.mem_ctrl_inst.CSR_registers_inst.u_adapter<BR>
+<B>Type name: </B>rggen_apb_adapter<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_apb_adapter.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_apb_adapter.v</A><BR><B>Number of uncovered assertions: </B>0 of 0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Finished Failed Assertion                      Line  Source Code                    
+------------------------------------------------------------------------------------
+
+0 items found
+
+</PRE>
+<A NAME="_CoverGroupcov"></A>
+<P class="detail_title">     Covered+Uncovered+Excluded+UNR CoverGroup Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.mem_ctrl_inst.CSR_registers_inst.u_adapter<BR>
+<B>Type name: </B>rggen_apb_adapter<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_apb_adapter.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_apb_adapter.v</A><BR><B>Number of covered cover bins: </B>0 of 0<BR>
+<B>Number of uncovered cover bins: </B>0 of 0<BR>
+<B>Number of excluded cover bins: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+
+0 items found
+
+</PRE>

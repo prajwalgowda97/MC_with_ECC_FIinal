@@ -65,7 +65,7 @@ class mc_double_bit_error_injection_sequence extends uvm_sequence#(mc_axi_seq_it
 
     if (scenario == 4)
         begin
-        for (int i = 0; i < 1; i++) 
+        for (int i = 0; i < 100; i++) 
          begin
 
            `uvm_info(get_type_name(),$sformatf("Write scenario 4 Started"),UVM_MEDIUM) 
@@ -95,7 +95,7 @@ class mc_double_bit_error_injection_sequence extends uvm_sequence#(mc_axi_seq_it
    
     if (scenario == 5)
         begin
-        for (int i = 0; i < 1; i++) 
+        for (int i = 0; i < 100; i++) 
          begin
 
            `uvm_info(get_type_name(),$sformatf("Read scenario 5 Started"),UVM_MEDIUM) 

@@ -1,0 +1,385 @@
+<HTML>
+<HEAD>
+<link type="text/css" rel="stylesheet" href="../../imc.css"></link>
+<script type="text/javascript" src="../../sortable.js"></script>
+<TITLE>IMC Report: ./cov_report_html</TITLE></HEAD>
+<BODY>
+<A NAME="_topcov"></A>
+<P class="summary_title">Coverage   Summary Report, Instance-Based</P>
+
+<P class="fs"><A STYLE="float: left" class="namet" HREF="../../index.html">Top Level Summary</A><A STYLE="float: right" class="namet" HREF="../../legend.html">Legend and Help</A></P>
+<BR>
+<TABLE class="detail_header"><TR class="detail"><TD>
+
+<B>Instance name: </B><A HREF="../dir_1/summ_5_t1.html" class="namet">zmc_axi4_top</A>.axi4_slave_inst<BR>
+
+<B>Type name: </B>axi4_slave<BR>
+
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/AXI4_slave.sv" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/AXI4_slave.sv</A><BR>
+
+</TD></TR></TABLE>
+
+<BR>
+<P class="subtitle">Coverage Summary Report, Instance-Based</P>
+<TABLE class="sortable sml summary_table" id="totalTable">
+
+
+<TR><TH class="wht">Overall</TH>
+<TH class="wht">Overall Covered</TH>
+<TH class="wht">Block</TH>
+<TH class="wht">Expression</TH>
+<TH class="wht">Toggle</TH>
+<TH class="wht">FSM&nbsp;State</TH>
+<TH class="wht">FSM&nbsp;Transition</TH>
+<TH class="wht">Assertion</TH>
+<TH class="wht">CoverGroup</TH>
+<TH class="wht">CoverGroup Covered</TH>
+<TH class="wht">name</TH>
+
+</TR>
+
+<TR><TD class="range95to99"><A HREF="">95.61%</A></TD>
+<TD class="range90to94"><A HREF="">90.93%&nbsp;(1183/1301)</A></TD>
+<TD class="range95to99"><A HREF="#_Blockcov">98.52%&nbsp;(200/203)</A></TD>
+<TD class="range90to94"><A HREF="#_Expressioncov">94.69%&nbsp;(196/207)</A></TD>
+<TD class="range85to89"><A HREF="#_Togglecov">87.97%&nbsp;(753/856)</A></TD>
+<TD class="range100"><A HREF="#_Fsmcov">100.00%&nbsp;(15/15)</A></TD>
+<TD class="range95to99"><A HREF="#_Fsmcov">95.00%&nbsp;(19/20)</A></TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="namecell">axi4_slave_inst</TD>
+
+</TR>
+
+
+</TABLE>
+<BR><BR><A NAME="_Blockcov"></A>
+<P class="detail_title">     Uncovered Block Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.axi4_slave_inst<BR>
+<B>Type name: </B>axi4_slave<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/AXI4_slave.sv" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/AXI4_slave.sv</A><BR><B>Number of uncovered blocks: </B>3 of 203<BR>
+<B>Number of unreachable blocks: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Count  Block Line  Kind                 Origin Source Code                    
+------------------------------------------------------------------------------
+0      24    233   false part of        228    begin                          
+0      29    252   false part of        247    begin                          
+0      129   660   false part of        655    begin                          
+
+</PRE>
+<A NAME="_Expressioncov"></A>
+<P class="detail_title">     Uncovered Expression Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.axi4_slave_inst<BR>
+<B>Type name: </B>axi4_slave<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/AXI4_slave.sv" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/AXI4_slave.sv</A><BR><B>Number of uncovered expressions: </B>11 of 207<BR>
+<B>Number of unreachable expressions: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+index  | grade         | line   | expression                                         
+-------------------------------------------------------------------------------------
+1.1    | 75.00% (3/4)  | 139    | awvalid ? awaddr : wr_addr_w1                      
+6.1    | 66.67% (2/3)  | 214    | awvalid && awready                                 
+8.1    | 33.33% (1/3)  | 228    | wvalid && wready                                   
+10.1   | 50.00% (1/2)  | 247    | bresp == 2'b00                                     
+29.1   | 83.33% (5/6)  | 551    | (awvalid && (awburst == 2'd2)) ? (wrap_bndry + (NO_OF_BYTES * (awlen + 1'b1))) : addr_n_r 
+36.1   | 66.67% (2/3)  | 639    | arvalid && arready                                 
+38.1   | 66.67% (2/3)  | 653    | rvalid && rready                                   
+39.1   | 50.00% (1/2)  | 655    | rresp == 2'd0                                      
+40.1   | 75.00% (3/4)  | 729    | (slave_rd_en_o ^ slave_rd_en_r) ? 1'b1 : 1'b0      
+59.1   | 83.33% (5/6)  | 963    | (arvalid && (arburst == 2'd2)) ? (wrap_bndry_rd + (NO_OF_BYTES * (arlen + 1'b1))) : addr_n_w 
+
+<B>index: </B><B>1.1</B><B> grade: </B><B>75.00% (3/4)</B><B> line: </B><B>139</B><B> source: </B><B>assign wr_addr_w = (awvalid) ? awaddr : wr_addr_w1 ;</B>
+
+awvalid ? awaddr : wr_addr_w1<BR>
+<B><</B>--<B>1</B>--<B>></B>   <B><</B>-<B>2</B>--<B>></B>   <B><</B>---<B>3</B>----<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; &lt;3&gt; 
+---------------------------------------
+1.1.4     | 0     | 0    | 1   0   -   
+
+<B>index: </B><B>6.1</B><B> grade: </B><B>66.67% (2/3)</B><B> line: </B><B>214</B><B> source: </B><B>if(awvalid && awready)</B>
+
+awvalid && awready<BR>
+<B><</B>--<B>1</B>--<B>></B>    <B><</B>--<B>2</B>--<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+---------------------------- '&&'
+6.1.1     | 0     | 0   -   
+
+<B>index: </B><B>8.1</B><B> grade: </B><B>33.33% (1/3)</B><B> line: </B><B>228</B><B> source: </B><B>if(wvalid && wready)</B>
+
+wvalid && wready<BR>
+<B><</B>-<B>1</B>--<B>></B>    <B><</B>-<B>2</B>--<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+---------------------------- '&&'
+8.1.1     | 0     | 0   -   
+8.1.2     | 0     | -   0   
+
+<B>index: </B><B>10.1</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>247</B><B> source: </B><B>if(bresp == 2'b00)</B>
+
+bresp == 2'b00<BR>
+<B><</B>-<B>1</B>-<B>></B>    <B><</B>-<B>2</B>-<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+-------------------------------- '=='
+10.1.2    | 0     | lhs != rhs  
+
+<B>index: </B><B>29.1</B><B> grade: </B><B>83.33% (5/6)</B><B> line: </B><B>551</B><B> source: </B><B>assign addr_n_wr = (awvalid && awburst == 2'd2) ? (wrap_bndry + (NO_OF_BYTES*(awlen+1'b1))) : addr_n_r  ;</B>
+
+(awvalid && (awburst == 2'd2)) ? (wrap_bndry + (NO_OF_BYTES * (awlen + 1'b1))) : addr_n_r<BR>
+ <B><</B>--<B>1</B>--<B>></B>    <B><</B>-------<B>2</B>-------<B>></B>    <B><</B>---------------------<B>3</B>---------------------<B>></B>   <B><</B>--<B>4</B>---<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; &lt;3&gt; &lt;4&gt; 
+-------------------------------------------
+29.1.4    | 0     | 0    | 1   1   0   -   
+
+<B>index: </B><B>36.1</B><B> grade: </B><B>66.67% (2/3)</B><B> line: </B><B>639</B><B> source: </B><B>if(arvalid && arready)</B>
+
+arvalid && arready<BR>
+<B><</B>--<B>1</B>--<B>></B>    <B><</B>--<B>2</B>--<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+---------------------------- '&&'
+36.1.1    | 0     | 0   -   
+
+<B>index: </B><B>38.1</B><B> grade: </B><B>66.67% (2/3)</B><B> line: </B><B>653</B><B> source: </B><B>if(rvalid && rready)</B>
+
+rvalid && rready<BR>
+<B><</B>-<B>1</B>--<B>></B>    <B><</B>-<B>2</B>--<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+---------------------------- '&&'
+38.1.1    | 0     | 0   -   
+
+<B>index: </B><B>39.1</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>655</B><B> source: </B><B>if(rresp == 2'd0)</B>
+
+rresp == 2'd0<BR>
+<B><</B>-<B>1</B>-<B>></B>    <B><</B><B>2</B>-<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+-------------------------------- '=='
+39.1.2    | 0     | lhs != rhs  
+
+<B>index: </B><B>40.1</B><B> grade: </B><B>75.00% (3/4)</B><B> line: </B><B>729</B><B> source: </B><B>rlast            =    (slave_rd_en_o ^ slave_rd_en_r) ? 1'b1 : 1'b0;</B>
+
+(slave_rd_en_o ^ slave_rd_en_r) ? 1'b1 : 1'b0<BR>
+ <B><</B>-----<B>1</B>-----<B>></B>   <B><</B>-----<B>2</B>-----<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; 
+-----------------------------------
+40.1.1    | 0     | 1    | 1   0   
+
+<B>index: </B><B>59.1</B><B> grade: </B><B>83.33% (5/6)</B><B> line: </B><B>963</B><B> source: </B><B>assign addr_n_rd = (arvalid && arburst == 2'd2) ? (wrap_bndry_rd + (NO_OF_BYTES*(arlen+1'b1))) : addr_n_w  ;</B>
+
+(arvalid && (arburst == 2'd2)) ? (wrap_bndry_rd + (NO_OF_BYTES * (arlen + 1'b1))) : addr_n_w<BR>
+ <B><</B>--<B>1</B>--<B>></B>    <B><</B>-------<B>2</B>-------<B>></B>    <B><</B>----------------------<B>3</B>-----------------------<B>></B>   <B><</B>--<B>4</B>---<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; &lt;3&gt; &lt;4&gt; 
+-------------------------------------------
+59.1.4    | 0     | 0    | 1   1   0   -   
+
+
+</PRE>
+<A NAME="_Togglecov"></A>
+<P class="detail_title">     Uncovered Toggle Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.axi4_slave_inst<BR>
+<B>Type name: </B>axi4_slave<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/AXI4_slave.sv" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/AXI4_slave.sv</A><BR><B>Number of uncovered signal bits: </B>103 of 856<BR>
+<B>Number of unreachable signal bits: </B>0<BR>
+<B>Number of signal bits partially toggled(rise): </B>9 of 856<BR>
+<B>Number of signal bits partially toggled(fall): </B>0 of 856<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Hit(Full)  Hit(Rise)  Hit(Fall)  Signal                    
+-----------------------------------------------------------
+0          1          0          axi4_slave_rstn           
+0          0          0          bresp[1]                  
+0          0          0          bresp[0]                  
+0          0          0          rresp[1]                  
+0          0          0          rresp[0]                  
+0          0          0          slave_wr_resp[1]          
+0          0          0          slave_wr_resp[0]          
+0          0          0          slave_rd_resp[1]          
+0          0          0          slave_rd_resp[0]          
+0          0          0          addr_n_wr[1]              
+0          0          0          addr_n_wr[0]              
+0          0          0          addr_n_r[5]               
+0          0          0          addr_n_r[4]               
+0          0          0          addr_n_r[3]               
+0          0          0          addr_n_r[2]               
+0          0          0          addr_n_r[1]               
+0          0          0          addr_n_r[0]               
+0          0          0          wrap_bndry[1]             
+0          0          0          wrap_bndry[0]             
+0          0          0          wrap_bndry_r[5]           
+0          0          0          wrap_bndry_r[4]           
+0          0          0          wrap_bndry_r[3]           
+0          0          0          wrap_bndry_r[2]           
+0          0          0          wrap_bndry_r[1]           
+0          0          0          wrap_bndry_r[0]           
+0          0          0          add_wr[31]                
+0          0          0          add_wr[30]                
+0          0          0          add_wr[29]                
+0          0          0          add_wr[28]                
+0          0          0          add_wr[27]                
+0          0          0          add_wr[26]                
+0          0          0          add_wr[25]                
+0          0          0          add_wr[24]                
+0          0          0          add_wr[23]                
+0          0          0          add_wr[22]                
+0          0          0          add_wr[21]                
+0          0          0          add_wr[20]                
+0          0          0          add_wr[19]                
+0          0          0          add_wr[18]                
+0          0          0          add_wr[17]                
+0          0          0          add_wr[16]                
+0          0          0          add_wr[15]                
+0          0          0          add_wr[14]                
+0          0          0          add_wr[13]                
+0          0          0          add_wr[12]                
+0          0          0          add_wr[11]                
+0          0          0          add_wr[10]                
+0          0          0          add_wr[9]                 
+0          0          0          add_wr[8]                 
+0          0          0          add_wr[7]                 
+0          0          0          add_wr[1]                 
+0          0          0          add_wr[0]                 
+0          1          0          awlen_reg[3]              
+0          1          0          awlen_reg[2]              
+0          1          0          awlen_reg[1]              
+0          1          0          awlen_reg[0]              
+0          0          0          addr_n_rd[1]              
+0          0          0          addr_n_rd[0]              
+0          0          0          addr_n_w[5]               
+0          0          0          addr_n_w[4]               
+0          0          0          addr_n_w[3]               
+0          0          0          addr_n_w[2]               
+0          0          0          addr_n_w[1]               
+0          0          0          addr_n_w[0]               
+0          0          0          wrap_bndry_rd[1]          
+0          0          0          wrap_bndry_rd[0]          
+0          0          0          wrap_bndry_w[5]           
+0          0          0          wrap_bndry_w[4]           
+0          0          0          wrap_bndry_w[3]           
+0          0          0          wrap_bndry_w[2]           
+0          0          0          wrap_bndry_w[1]           
+0          0          0          wrap_bndry_w[0]           
+0          0          0          add_rd[31]                
+0          0          0          add_rd[30]                
+0          0          0          add_rd[29]                
+0          0          0          add_rd[28]                
+0          0          0          add_rd[27]                
+0          0          0          add_rd[26]                
+0          0          0          add_rd[25]                
+0          0          0          add_rd[24]                
+0          0          0          add_rd[23]                
+0          0          0          add_rd[22]                
+0          0          0          add_rd[21]                
+0          0          0          add_rd[20]                
+0          0          0          add_rd[19]                
+0          0          0          add_rd[18]                
+0          0          0          add_rd[17]                
+0          0          0          add_rd[16]                
+0          0          0          add_rd[15]                
+0          0          0          add_rd[14]                
+0          0          0          add_rd[13]                
+0          0          0          add_rd[12]                
+0          0          0          add_rd[11]                
+0          0          0          add_rd[10]                
+0          0          0          add_rd[9]                 
+0          0          0          add_rd[8]                 
+0          0          0          add_rd[7]                 
+0          0          0          add_rd[1]                 
+0          0          0          add_rd[0]                 
+0          1          0          arlen_reg[3]              
+0          1          0          arlen_reg[2]              
+0          1          0          arlen_reg[1]              
+0          1          0          arlen_reg[0]              
+
+</PRE>
+<A NAME="_Fsmcov"></A>
+<P class="detail_title">     Uncovered Fsm Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.axi4_slave_inst<BR>
+<B>Type name: </B>axi4_slave<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/AXI4_slave.sv" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/AXI4_slave.sv</A><BR>
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+<B>File name: </B>/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/AXI4_slave.sv<BR>
+<B>State register: </B>wr_present_state<BR>
+<B>Number of uncovered states: </B>0 of 4<BR>
+<B>Number of uncovered transitions: </B>1 of 5<BR>
+
+Transition Coverage:<BR>
+====================
+P-State              N-State              Visits 
+-------------------------------------------------
+WR_RESP              WR_DATA              0      
+
+
+</PRE>
+<A NAME="_Assertioncov"></A>
+<P class="detail_title">     Uncovered Assertion Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.axi4_slave_inst<BR>
+<B>Type name: </B>axi4_slave<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/AXI4_slave.sv" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/AXI4_slave.sv</A><BR><B>Number of uncovered assertions: </B>0 of 0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Finished Failed Assertion                      Line  Source Code                    
+------------------------------------------------------------------------------------
+
+0 items found
+
+</PRE>
+<A NAME="_CoverGroupcov"></A>
+<P class="detail_title">     Covered+Uncovered+Excluded+UNR CoverGroup Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.axi4_slave_inst<BR>
+<B>Type name: </B>axi4_slave<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/AXI4_slave.sv" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/AXI4_slave.sv</A><BR><B>Number of covered cover bins: </B>0 of 0<BR>
+<B>Number of uncovered cover bins: </B>0 of 0<BR>
+<B>Number of excluded cover bins: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+
+0 items found
+
+</PRE>

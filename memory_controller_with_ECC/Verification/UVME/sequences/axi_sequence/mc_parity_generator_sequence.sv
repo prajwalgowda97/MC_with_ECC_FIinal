@@ -65,7 +65,7 @@ class mc_parity_generator_sequence extends uvm_sequence#(mc_axi_seq_item);
 
     if (scenario == 4)
         begin
-        for (int i = 0; i < 4; i++) 
+        for (int i = 0; i < 10; i++) 
          begin
 
            `uvm_info(get_type_name(),$sformatf("Write scenario 4 Started"),UVM_MEDIUM) 

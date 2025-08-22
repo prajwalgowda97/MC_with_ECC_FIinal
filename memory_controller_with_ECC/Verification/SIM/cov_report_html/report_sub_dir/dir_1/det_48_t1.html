@@ -1,0 +1,646 @@
+<HTML>
+<HEAD>
+<link type="text/css" rel="stylesheet" href="../../imc.css"></link>
+<script type="text/javascript" src="../../sortable.js"></script>
+<TITLE>IMC Report: ./cov_report_html</TITLE></HEAD>
+<BODY>
+<A NAME="_topcov"></A>
+<P class="summary_title">Coverage   Summary Report, Instance-Based</P>
+
+<P class="fs"><A STYLE="float: left" class="namet" HREF="../../index.html">Top Level Summary</A><A STYLE="float: right" class="namet" HREF="../../legend.html">Legend and Help</A></P>
+<BR>
+<TABLE class="detail_header"><TR class="detail"><TD>
+
+<B>Instance name: </B><A HREF="../dir_1/summ_5_t1.html" class="namet">zmc_axi4_top</A><A HREF="../dir_1/summ_7_t1.html" class="namet">.mem_ctrl_inst</A><A HREF="../dir_1/summ_15_t1.html" class="namet">.CSR_registers_inst</A><A HREF="../dir_1/summ_16_t1.html" class="namet">.u_adapter</A><A HREF="../dir_1/summ_17_t1.html" class="namet">.u_adapter_common</A><A HREF="../dir_1/summ_38_t1.html" class="namet">.u_read_data_mux</A><A HREF="../dir_1/summ_39_t1.html" class="namet">.g</A>.u_reducer<BR>
+
+<B>Type name: </B>rggen_or_reducer<BR>
+
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_or_reducer.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_or_reducer.v</A><BR>
+
+</TD></TR></TABLE>
+
+<BR>
+<P class="subtitle">Coverage Summary Report, Instance-Based</P>
+<TABLE class="sortable sml summary_table" id="totalTable">
+
+
+<TR><TH class="wht">Overall</TH>
+<TH class="wht">Overall Covered</TH>
+<TH class="wht">Block</TH>
+<TH class="wht">Expression</TH>
+<TH class="wht">Toggle</TH>
+<TH class="wht">FSM&nbsp;State</TH>
+<TH class="wht">FSM&nbsp;Transition</TH>
+<TH class="wht">Assertion</TH>
+<TH class="wht">CoverGroup</TH>
+<TH class="wht">CoverGroup Covered</TH>
+<TH class="wht">name</TH>
+
+</TR>
+
+<TR><TD class="range0"><A HREF="">0.38%</A></TD>
+<TD class="range01to04"><A HREF="">1.02%&nbsp;(4/391)</A></TD>
+<TD class="range0"><A HREF="#_Blockcov">0.00%&nbsp;(0/18)</A></TD>
+<TD class="range0"><A HREF="#_Expressioncov">0.00%&nbsp;(0/21)</A></TD>
+<TD class="range01to04"><A HREF="#_Togglecov">1.14%&nbsp;(4/352)</A></TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="namecell">u_reducer</TD>
+
+</TR>
+
+
+</TABLE>
+<A NAME="_Blockcov"></A>
+<P class="detail_title">     Uncovered Block Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.mem_ctrl_inst.CSR_registers_inst.u_adapter.u_adapter_common.u_read_data_mux.g.u_reducer<BR>
+<B>Type name: </B>rggen_or_reducer<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_or_reducer.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_or_reducer.v</A><BR><B>Number of uncovered blocks: </B>18 of 18<BR>
+<B>Number of unreachable blocks: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Count  Block Line  Kind                 Origin Source Code                    
+------------------------------------------------------------------------------
+0      1     15    code block           8      begin                          
+0      2     18    code block           18     while (current_n &gt; 0) begin 
+0      3     20    true part of         20     if ((current_n &gt; 4) && (half_n &lt;= 4)) begin 
+0      4     23    false part of        20     else if (current_n &gt;= 4) begin 
+0      5     23    true part of         23     else if (current_n &gt;= 4) begin 
+0      6     26    false part of        23     else begin                     
+0      7     30    code block           30     current_n   = current_n - list[16*list_index+:16]; 
+0      8     34    code block           34     while (list_index &lt; N) begin 
+0      9     34    code block           34     while (list_index &lt; N) begin 
+0      10    39    code block           39     get_sub_n_list  = list;        
+0      11    48    code block           43     begin                          
+0      12    49    code block           49     for (i = 0;i &lt; N;i = i + 1) begin 
+0      13    50    true part of         50     if (i == 0) begin              
+0      14    53    false part of        50     else begin                     
+0      15    58    code block           58     get_offset_list = list;        
+0      16    67    code block           62     begin                          
+0      17    69    code block           69     for (i = 0;i &lt; N;i = i + 1) begin 
+0      18    73    code block           73     get_next_n  = next_n;          
+
+</PRE>
+<A NAME="_Expressioncov"></A>
+<P class="detail_title">     Uncovered Expression Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.mem_ctrl_inst.CSR_registers_inst.u_adapter.u_adapter_common.u_read_data_mux.g.u_reducer<BR>
+<B>Type name: </B>rggen_or_reducer<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_or_reducer.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_or_reducer.v</A><BR><B>Number of uncovered expressions: </B>21 of 21<BR>
+<B>Number of unreachable expressions: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+index  | grade         | line   | expression                                         
+-------------------------------------------------------------------------------------
+1.1    | 0.00% (0/2)   | 18     | current_n &gt; 0                                   
+2.1    | 0.00% (0/3)   | 20     | (current_n &gt; 4) && (half_n &lt;= 4)             
+2.2    | 0.00% (0/2)   | 20     | (current_n &gt; 4)                                 
+2.3    | 0.00% (0/2)   | 20     | (half_n &lt;= 4)                                   
+3.1    | 0.00% (0/2)   | 23     | current_n &gt;= 4                                  
+4.1    | 0.00% (0/2)   | 34     | list_index &lt; N                                  
+5.1    | 0.00% (0/2)   | 49     | i &lt; N                                           
+6.1    | 0.00% (0/2)   | 50     | i == 0                                             
+7.1    | 0.00% (0/2)   | 69     | i &lt; N                                           
+8.1    | 0.00% (0/2)   | 70     | ((sub_n_list[(16 * i)+:16] != 0) ? 1 : 0)          
+
+<B>index: </B><B>1.1</B><B> grade: </B><B>0.00% (0/2)</B><B> line: </B><B>18</B><B> source: </B><B>while (current_n > 0) begin</B>
+
+current_n > 0<BR>
+<B><</B>---<B>1</B>---<B>></B>   <B><2></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+-------------------------------- '>'
+1.1.1     | 0     | lhs &gt; rhs 
+1.1.2     | 0     | lhs &lt;= rhs 
+
+<B>index: </B><B>2.1</B><B> grade: </B><B>0.00% (0/3)</B><B> line: </B><B>20</B><B> source: </B><B>if ((current_n > 4) && (half_n <= 4)) begin</B>
+
+(current_n > 4) && (half_n <= 4)<BR>
+<B><</B>------<B>1</B>------<B>></B>    <B><</B>-----<B>2</B>-----<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+---------------------------- '&&'
+2.1.1     | 0     | 0   -   
+2.1.2     | 0     | -   0   
+2.1.3     | 0     | 1   1   
+
+<B>index: </B><B>2.2</B><B> grade: </B><B>0.00% (0/2)</B><B> line: </B><B>20</B><B> source: </B><B>if ((current_n > 4) && (half_n <= 4)) begin</B>
+
+(current_n > 4)<BR>
+ <B><</B>---<B>3</B>---<B>></B>   <B><4></B>
+
+index     | hit   | &lt;3&gt; &lt;4&gt; 
+-------------------------------- '>'
+2.2.1     | 0     | lhs &gt; rhs 
+2.2.2     | 0     | lhs &lt;= rhs 
+
+<B>index: </B><B>2.3</B><B> grade: </B><B>0.00% (0/2)</B><B> line: </B><B>20</B><B> source: </B><B>if ((current_n > 4) && (half_n <= 4)) begin</B>
+
+(half_n <= 4)<BR>
+ <B><</B>-<B>5</B>--<B>></B>    <B><6></B>
+
+index     | hit   | &lt;5&gt; &lt;6&gt; 
+-------------------------------- '<='
+2.3.1     | 0     | lhs &gt; rhs 
+2.3.2     | 0     | lhs &lt;= rhs 
+
+<B>index: </B><B>3.1</B><B> grade: </B><B>0.00% (0/2)</B><B> line: </B><B>23</B><B> source: </B><B>else if (current_n >= 4) begin</B>
+
+current_n >= 4<BR>
+<B><</B>---<B>1</B>---<B>></B>    <B><2></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+-------------------------------- '>='
+3.1.1     | 0     | lhs &lt; rhs 
+3.1.2     | 0     | lhs &gt;= rhs 
+
+<B>index: </B><B>4.1</B><B> grade: </B><B>0.00% (0/2)</B><B> line: </B><B>34</B><B> source: </B><B>while (list_index < N) begin</B>
+
+list_index < N<BR>
+<B><</B>---<B>1</B>----<B>></B>   <B><2></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+-------------------------------- '<'
+4.1.1     | 0     | lhs &lt; rhs 
+4.1.2     | 0     | lhs &gt;= rhs 
+
+<B>index: </B><B>5.1</B><B> grade: </B><B>0.00% (0/2)</B><B> line: </B><B>49</B><B> source: </B><B>for (i = 0;i < N;i = i + 1) begin</B>
+
+i < N<BR>
+<B><1></B> <B><2></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+-------------------------------- '<'
+5.1.1     | 0     | lhs &lt; rhs 
+5.1.2     | 0     | lhs &gt;= rhs 
+
+<B>index: </B><B>6.1</B><B> grade: </B><B>0.00% (0/2)</B><B> line: </B><B>50</B><B> source: </B><B>if (i == 0) begin</B>
+
+i == 0<BR>
+<B><1></B>  <B><2></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+-------------------------------- '=='
+6.1.1     | 0     | lhs == rhs  
+6.1.2     | 0     | lhs != rhs  
+
+<B>index: </B><B>7.1</B><B> grade: </B><B>0.00% (0/2)</B><B> line: </B><B>69</B><B> source: </B><B>for (i = 0;i < N;i = i + 1) begin</B>
+
+i < N<BR>
+<B><1></B> <B><2></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+-------------------------------- '<'
+7.1.1     | 0     | lhs &lt; rhs 
+7.1.2     | 0     | lhs &gt;= rhs 
+
+<B>index: </B><B>8.1</B><B> grade: </B><B>0.00% (0/2)</B><B> line: </B><B>70</B><B> source: </B><B>next_n  = next_n + ((sub_n_list[16*i+:16] != 0) ? 1 : 0);</B>
+
+((sub_n_list[(16 * i)+:16] != 0) ? 1 : 0)<BR>
+  <B><</B>----------<B>1</B>-----------<B>></B>
+
+index     | hit   | rval | &lt;1&gt; 
+-------------------------------
+8.1.1     | 0     | 1    | 1   
+8.1.2     | 0     | 0    | 0   
+
+
+</PRE>
+<A NAME="_Togglecov"></A>
+<P class="detail_title">     Uncovered Toggle Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.mem_ctrl_inst.CSR_registers_inst.u_adapter.u_adapter_common.u_read_data_mux.g.u_reducer<BR>
+<B>Type name: </B>rggen_or_reducer<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_or_reducer.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_or_reducer.v</A><BR><B>Number of uncovered signal bits: </B>348 of 352<BR>
+<B>Number of unreachable signal bits: </B>0<BR>
+<B>Number of signal bits partially toggled(rise): </B>4 of 352<BR>
+<B>Number of signal bits partially toggled(fall): </B>0 of 352<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Hit(Full)  Hit(Rise)  Hit(Fall)  Signal                    
+-----------------------------------------------------------
+0          0          0          i_data[255]               
+0          0          0          i_data[254]               
+0          0          0          i_data[253]               
+0          0          0          i_data[252]               
+0          0          0          i_data[251]               
+0          0          0          i_data[250]               
+0          0          0          i_data[249]               
+0          0          0          i_data[248]               
+0          0          0          i_data[247]               
+0          0          0          i_data[246]               
+0          0          0          i_data[245]               
+0          0          0          i_data[244]               
+0          0          0          i_data[243]               
+0          0          0          i_data[242]               
+0          0          0          i_data[241]               
+0          0          0          i_data[240]               
+0          0          0          i_data[239]               
+0          0          0          i_data[238]               
+0          0          0          i_data[237]               
+0          0          0          i_data[236]               
+0          0          0          i_data[235]               
+0          0          0          i_data[234]               
+0          0          0          i_data[233]               
+0          0          0          i_data[232]               
+0          0          0          i_data[231]               
+0          0          0          i_data[230]               
+0          0          0          i_data[229]               
+0          0          0          i_data[228]               
+0          0          0          i_data[227]               
+0          0          0          i_data[226]               
+0          0          0          i_data[225]               
+0          0          0          i_data[224]               
+0          0          0          i_data[223]               
+0          0          0          i_data[222]               
+0          0          0          i_data[221]               
+0          0          0          i_data[220]               
+0          0          0          i_data[219]               
+0          0          0          i_data[218]               
+0          0          0          i_data[217]               
+0          0          0          i_data[216]               
+0          0          0          i_data[215]               
+0          0          0          i_data[214]               
+0          0          0          i_data[213]               
+0          0          0          i_data[212]               
+0          0          0          i_data[211]               
+0          0          0          i_data[210]               
+0          0          0          i_data[209]               
+0          0          0          i_data[208]               
+0          0          0          i_data[207]               
+0          0          0          i_data[206]               
+0          0          0          i_data[205]               
+0          0          0          i_data[204]               
+0          0          0          i_data[203]               
+0          0          0          i_data[202]               
+0          0          0          i_data[201]               
+0          0          0          i_data[200]               
+0          0          0          i_data[199]               
+0          0          0          i_data[198]               
+0          0          0          i_data[197]               
+0          0          0          i_data[196]               
+0          0          0          i_data[195]               
+0          0          0          i_data[194]               
+0          0          0          i_data[193]               
+0          0          0          i_data[192]               
+0          0          0          i_data[191]               
+0          0          0          i_data[190]               
+0          0          0          i_data[189]               
+0          0          0          i_data[188]               
+0          0          0          i_data[187]               
+0          0          0          i_data[186]               
+0          0          0          i_data[185]               
+0          0          0          i_data[184]               
+0          0          0          i_data[183]               
+0          0          0          i_data[182]               
+0          0          0          i_data[181]               
+0          0          0          i_data[180]               
+0          0          0          i_data[179]               
+0          0          0          i_data[178]               
+0          0          0          i_data[177]               
+0          0          0          i_data[176]               
+0          0          0          i_data[175]               
+0          0          0          i_data[174]               
+0          0          0          i_data[173]               
+0          0          0          i_data[172]               
+0          0          0          i_data[171]               
+0          0          0          i_data[170]               
+0          0          0          i_data[169]               
+0          0          0          i_data[168]               
+0          0          0          i_data[167]               
+0          0          0          i_data[166]               
+0          0          0          i_data[165]               
+0          0          0          i_data[164]               
+0          0          0          i_data[163]               
+0          0          0          i_data[162]               
+0          0          0          i_data[161]               
+0          0          0          i_data[160]               
+0          0          0          i_data[159]               
+0          0          0          i_data[158]               
+0          0          0          i_data[157]               
+0          0          0          i_data[156]               
+0          0          0          i_data[155]               
+0          0          0          i_data[154]               
+0          0          0          i_data[153]               
+0          0          0          i_data[152]               
+0          0          0          i_data[151]               
+0          0          0          i_data[150]               
+0          0          0          i_data[149]               
+0          0          0          i_data[148]               
+0          0          0          i_data[147]               
+0          0          0          i_data[146]               
+0          0          0          i_data[145]               
+0          0          0          i_data[144]               
+0          0          0          i_data[143]               
+0          0          0          i_data[142]               
+0          0          0          i_data[141]               
+0          0          0          i_data[140]               
+0          0          0          i_data[139]               
+0          0          0          i_data[138]               
+0          0          0          i_data[137]               
+0          0          0          i_data[136]               
+0          0          0          i_data[135]               
+0          0          0          i_data[134]               
+0          0          0          i_data[133]               
+0          0          0          i_data[132]               
+0          0          0          i_data[131]               
+0          0          0          i_data[130]               
+0          0          0          i_data[129]               
+0          0          0          i_data[128]               
+0          0          0          i_data[127]               
+0          0          0          i_data[126]               
+0          0          0          i_data[125]               
+0          0          0          i_data[124]               
+0          0          0          i_data[123]               
+0          0          0          i_data[122]               
+0          0          0          i_data[121]               
+0          0          0          i_data[120]               
+0          0          0          i_data[119]               
+0          0          0          i_data[118]               
+0          0          0          i_data[117]               
+0          0          0          i_data[116]               
+0          0          0          i_data[115]               
+0          0          0          i_data[114]               
+0          0          0          i_data[113]               
+0          0          0          i_data[112]               
+0          0          0          i_data[111]               
+0          0          0          i_data[110]               
+0          0          0          i_data[109]               
+0          0          0          i_data[108]               
+0          0          0          i_data[107]               
+0          0          0          i_data[106]               
+0          0          0          i_data[105]               
+0          0          0          i_data[104]               
+0          0          0          i_data[103]               
+0          0          0          i_data[102]               
+0          0          0          i_data[101]               
+0          0          0          i_data[100]               
+0          0          0          i_data[99]                
+0          0          0          i_data[98]                
+0          0          0          i_data[97]                
+0          0          0          i_data[96]                
+0          0          0          i_data[95]                
+0          0          0          i_data[94]                
+0          0          0          i_data[93]                
+0          0          0          i_data[92]                
+0          0          0          i_data[91]                
+0          0          0          i_data[90]                
+0          0          0          i_data[89]                
+0          0          0          i_data[88]                
+0          0          0          i_data[87]                
+0          0          0          i_data[86]                
+0          0          0          i_data[85]                
+0          0          0          i_data[84]                
+0          0          0          i_data[83]                
+0          0          0          i_data[82]                
+0          0          0          i_data[81]                
+0          0          0          i_data[80]                
+0          0          0          i_data[79]                
+0          0          0          i_data[78]                
+0          0          0          i_data[77]                
+0          0          0          i_data[76]                
+0          0          0          i_data[75]                
+0          0          0          i_data[74]                
+0          0          0          i_data[73]                
+0          0          0          i_data[72]                
+0          0          0          i_data[71]                
+0          0          0          i_data[70]                
+0          0          0          i_data[69]                
+0          0          0          i_data[68]                
+0          0          0          i_data[67]                
+0          0          0          i_data[66]                
+0          0          0          i_data[65]                
+0          0          0          i_data[63]                
+0          0          0          i_data[62]                
+0          0          0          i_data[61]                
+0          0          0          i_data[60]                
+0          0          0          i_data[59]                
+0          0          0          i_data[58]                
+0          0          0          i_data[57]                
+0          0          0          i_data[56]                
+0          0          0          i_data[55]                
+0          0          0          i_data[54]                
+0          0          0          i_data[53]                
+0          0          0          i_data[52]                
+0          0          0          i_data[51]                
+0          0          0          i_data[50]                
+0          0          0          i_data[49]                
+0          0          0          i_data[48]                
+0          0          0          i_data[47]                
+0          0          0          i_data[46]                
+0          0          0          i_data[45]                
+0          0          0          i_data[44]                
+0          0          0          i_data[43]                
+0          0          0          i_data[42]                
+0          0          0          i_data[41]                
+0          0          0          i_data[40]                
+0          0          0          i_data[39]                
+0          0          0          i_data[38]                
+0          0          0          i_data[37]                
+0          0          0          i_data[36]                
+0          0          0          i_data[35]                
+0          0          0          i_data[34]                
+0          0          0          i_data[33]                
+0          0          0          i_data[31]                
+0          0          0          i_data[30]                
+0          0          0          i_data[29]                
+0          0          0          i_data[28]                
+0          0          0          i_data[27]                
+0          0          0          i_data[26]                
+0          0          0          i_data[25]                
+0          0          0          i_data[24]                
+0          0          0          i_data[23]                
+0          0          0          i_data[22]                
+0          0          0          i_data[21]                
+0          0          0          i_data[20]                
+0          0          0          i_data[19]                
+0          0          0          i_data[18]                
+0          0          0          i_data[17]                
+0          0          0          i_data[16]                
+0          0          0          i_data[15]                
+0          0          0          i_data[14]                
+0          0          0          i_data[13]                
+0          0          0          i_data[12]                
+0          0          0          i_data[11]                
+0          0          0          i_data[10]                
+0          0          0          i_data[9]                 
+0          0          0          i_data[8]                 
+0          0          0          i_data[7]                 
+0          0          0          i_data[6]                 
+0          0          0          i_data[5]                 
+0          0          0          i_data[4]                 
+0          0          0          i_data[3]                 
+0          0          0          i_data[2]                 
+0          1          0          i_data[1]                 
+0          1          0          i_data[0]                 
+0          0          0          o_result[31]              
+0          0          0          o_result[30]              
+0          0          0          o_result[29]              
+0          0          0          o_result[28]              
+0          0          0          o_result[27]              
+0          0          0          o_result[26]              
+0          0          0          o_result[25]              
+0          0          0          o_result[24]              
+0          0          0          o_result[23]              
+0          0          0          o_result[22]              
+0          0          0          o_result[21]              
+0          0          0          o_result[20]              
+0          0          0          o_result[19]              
+0          0          0          o_result[18]              
+0          0          0          o_result[17]              
+0          0          0          o_result[16]              
+0          0          0          o_result[15]              
+0          0          0          o_result[14]              
+0          0          0          o_result[13]              
+0          0          0          o_result[12]              
+0          0          0          o_result[11]              
+0          0          0          o_result[10]              
+0          0          0          o_result[9]               
+0          0          0          o_result[8]               
+0          0          0          o_result[7]               
+0          0          0          o_result[6]               
+0          0          0          o_result[5]               
+0          0          0          o_result[4]               
+0          0          0          o_result[3]               
+0          0          0          o_result[2]               
+0          1          0          o_result[1]               
+0          0          0          next_data[63]             
+0          0          0          next_data[62]             
+0          0          0          next_data[61]             
+0          0          0          next_data[60]             
+0          0          0          next_data[59]             
+0          0          0          next_data[58]             
+0          0          0          next_data[57]             
+0          0          0          next_data[56]             
+0          0          0          next_data[55]             
+0          0          0          next_data[54]             
+0          0          0          next_data[53]             
+0          0          0          next_data[52]             
+0          0          0          next_data[51]             
+0          0          0          next_data[50]             
+0          0          0          next_data[49]             
+0          0          0          next_data[48]             
+0          0          0          next_data[47]             
+0          0          0          next_data[46]             
+0          0          0          next_data[45]             
+0          0          0          next_data[44]             
+0          0          0          next_data[43]             
+0          0          0          next_data[42]             
+0          0          0          next_data[41]             
+0          0          0          next_data[40]             
+0          0          0          next_data[39]             
+0          0          0          next_data[38]             
+0          0          0          next_data[37]             
+0          0          0          next_data[36]             
+0          0          0          next_data[35]             
+0          0          0          next_data[34]             
+0          0          0          next_data[33]             
+0          0          0          next_data[32]             
+0          0          0          next_data[31]             
+0          0          0          next_data[30]             
+0          0          0          next_data[29]             
+0          0          0          next_data[28]             
+0          0          0          next_data[27]             
+0          0          0          next_data[26]             
+0          0          0          next_data[25]             
+0          0          0          next_data[24]             
+0          0          0          next_data[23]             
+0          0          0          next_data[22]             
+0          0          0          next_data[21]             
+0          0          0          next_data[20]             
+0          0          0          next_data[19]             
+0          0          0          next_data[18]             
+0          0          0          next_data[17]             
+0          0          0          next_data[16]             
+0          0          0          next_data[15]             
+0          0          0          next_data[14]             
+0          0          0          next_data[13]             
+0          0          0          next_data[12]             
+0          0          0          next_data[11]             
+0          0          0          next_data[10]             
+0          0          0          next_data[9]              
+0          0          0          next_data[8]              
+0          0          0          next_data[7]              
+0          0          0          next_data[6]              
+0          0          0          next_data[5]              
+0          0          0          next_data[4]              
+0          0          0          next_data[3]              
+0          0          0          next_data[2]              
+0          1          0          next_data[1]              
+
+</PRE>
+<A NAME="_Fsmcov"></A>
+<P class="detail_title">     Uncovered Fsm Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.mem_ctrl_inst.CSR_registers_inst.u_adapter.u_adapter_common.u_read_data_mux.g.u_reducer<BR>
+<B>Type name: </B>rggen_or_reducer<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_or_reducer.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_or_reducer.v</A><BR>
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+
+0 items found
+
+</PRE>
+<A NAME="_Assertioncov"></A>
+<P class="detail_title">     Uncovered Assertion Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.mem_ctrl_inst.CSR_registers_inst.u_adapter.u_adapter_common.u_read_data_mux.g.u_reducer<BR>
+<B>Type name: </B>rggen_or_reducer<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_or_reducer.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_or_reducer.v</A><BR><B>Number of uncovered assertions: </B>0 of 0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Finished Failed Assertion                      Line  Source Code                    
+------------------------------------------------------------------------------------
+
+0 items found
+
+</PRE>
+<A NAME="_CoverGroupcov"></A>
+<P class="detail_title">     Covered+Uncovered+Excluded+UNR CoverGroup Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.mem_ctrl_inst.CSR_registers_inst.u_adapter.u_adapter_common.u_read_data_mux.g.u_reducer<BR>
+<B>Type name: </B>rggen_or_reducer<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_or_reducer.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_or_reducer.v</A><BR><B>Number of covered cover bins: </B>0 of 0<BR>
+<B>Number of uncovered cover bins: </B>0 of 0<BR>
+<B>Number of excluded cover bins: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+
+0 items found
+
+</PRE>

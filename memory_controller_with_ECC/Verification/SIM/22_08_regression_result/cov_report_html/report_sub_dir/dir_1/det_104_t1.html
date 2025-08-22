@@ -1,0 +1,267 @@
+<HTML>
+<HEAD>
+<link type="text/css" rel="stylesheet" href="../../imc.css"></link>
+<script type="text/javascript" src="../../sortable.js"></script>
+<TITLE>IMC Report: ./cov_report_html</TITLE></HEAD>
+<BODY>
+<A NAME="_topcov"></A>
+<P class="summary_title">Coverage   Summary Report, Instance-Based</P>
+
+<P class="fs"><A STYLE="float: left" class="namet" HREF="../../index.html">Top Level Summary</A><A STYLE="float: right" class="namet" HREF="../../legend.html">Legend and Help</A></P>
+<BR>
+<TABLE class="detail_header"><TR class="detail"><TD>
+
+<B>Instance name: </B><A HREF="../dir_1/summ_5_t1.html" class="namet">zmc_axi4_top</A><A HREF="../dir_1/summ_7_t1.html" class="namet">.mem_ctrl_inst</A><A HREF="../dir_1/summ_15_t1.html" class="namet">.CSR_registers_inst</A><A HREF="../dir_1/summ_100_t1.html" class="namet">.g_CE_CNT_REG</A><A HREF="../dir_1/summ_101_t1.html" class="namet">.u_register</A><A HREF="../dir_1/summ_102_t1.html" class="namet">.u_register_common</A><A HREF="../dir_1/summ_103_t1.html" class="namet">.g_decoder[0]</A>.u_decoder<BR>
+
+<B>Type name: </B>rggen_address_decoder<BR>
+
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_address_decoder.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_address_decoder.v</A><BR>
+
+</TD></TR></TABLE>
+
+<BR>
+<P class="subtitle">Coverage Summary Report, Instance-Based</P>
+<TABLE class="sortable sml summary_table" id="totalTable">
+
+
+<TR><TH class="wht">Overall</TH>
+<TH class="wht">Overall Covered</TH>
+<TH class="wht">Block</TH>
+<TH class="wht">Expression</TH>
+<TH class="wht">Toggle</TH>
+<TH class="wht">FSM&nbsp;State</TH>
+<TH class="wht">FSM&nbsp;Transition</TH>
+<TH class="wht">Assertion</TH>
+<TH class="wht">CoverGroup</TH>
+<TH class="wht">CoverGroup Covered</TH>
+<TH class="wht">name</TH>
+
+</TR>
+
+<TR><TD class="range25to29"><A HREF="">29.93%</A></TD>
+<TD class="range25to29"><A HREF="">28.57%&nbsp;(14/49/3)</A></TD>
+<TD class="range50to54"><A HREF="#_Blockcov">50.00%&nbsp;(7/14)</A></TD>
+<TD class="range20to24"><A HREF="#_Expressioncov">21.05%&nbsp;(4/19/3)</A></TD>
+<TD class="range15to19"><A HREF="#_Togglecov">18.75%&nbsp;(3/16)</A></TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="namecell">u_decoder</TD>
+
+</TR>
+
+
+</TABLE>
+<BR><BR><A NAME="_Blockcov"></A>
+<P class="detail_title">     Uncovered Block Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.mem_ctrl_inst.CSR_registers_inst.g_CE_CNT_REG.u_register.u_register_common.g_decoder[0].u_decoder<BR>
+<B>Type name: </B>rggen_address_decoder<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_address_decoder.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_address_decoder.v</A><BR><B>Number of uncovered blocks: </B>7 of 14<BR>
+<B>Number of unreachable blocks: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Count  Block Line  Kind                 Origin Source Code                    
+------------------------------------------------------------------------------
+0      4     29    code block           24     begin                          
+0      5     32    code block           32     while (value &gt; 0) begin     
+0      6     36    code block           36     clog2 = result;                
+0      9     46    false part of        43     else begin                     
+0      12    60    false part of        57     else if (READABLE) begin       
+0      13    60    true part of         60     else if (READABLE) begin       
+0      14    63    false part of        60     else begin                     
+
+</PRE>
+<A NAME="_Expressioncov"></A>
+<P class="detail_title">     Uncovered Expression Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.mem_ctrl_inst.CSR_registers_inst.g_CE_CNT_REG.u_register.u_register_common.g_decoder[0].u_decoder<BR>
+<B>Type name: </B>rggen_address_decoder<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_address_decoder.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_address_decoder.v</A><BR><B>Number of uncovered expressions: </B>15 of 19<BR>
+<B>Number of unreachable expressions: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+index  | grade         | line   | expression                                         
+-------------------------------------------------------------------------------------
+1.1    | 25.00% (1/4)  | 22     | (w_address_match && w_access_match) && i_additional_match 
+2.1    | 0.00% (0/2)   | 32     | value &gt; 0                                       
+4.1    | 50.00% (1/2)  | 44     | address[(WIDTH - 1):LSB] == START_ADDRESS[(WIDTH - 1):LSB] 
+5.1    | 0.00% (0/3)   | 48     | (address[(WIDTH - 1):LSB] &gt;= START_ADDRESS[(WIDTH - 1):LSB]) && (address[(WIDTH - 1):LSB] &lt;= END_ADDRESS[(WIDTH - 1):LSB]) 
+5.2    | 0.00% (0/2)   | 48     | (address[(WIDTH - 1):LSB] &gt;= START_ADDRESS[(WIDTH - 1):LSB]) 
+5.3    | 0.00% (0/2)   | 49     | (address[(WIDTH - 1):LSB] &lt;= END_ADDRESS[(WIDTH - 1):LSB]) 
+7.1    | 0.00% (0/2)   | 61     | ! access[ACCESS_BIT]                               
+
+<B>index: </B><B>1.1</B><B> grade: </B><B>25.00% (1/4)</B><B> line: </B><B>22</B><B> source: </B><B>assign  o_match         = w_address_match && w_access_match && i_additional_match;</B>
+
+(w_address_match && w_access_match) && i_additional_match<BR>
+ <B><</B>------<B>1</B>------<B>></B>    <B><</B>-----<B>2</B>------<B>></B>     <B><</B>-------<B>3</B>--------<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; &lt;3&gt; 
+-------------------------------- '&&'
+1.1.2     | 0     | -   0   -   
+1.1.3     | 0     | -   -   0   
+1.1.4     | 0     | 1   1   1   
+
+<B>index: </B><B>2.1</B><B> grade: </B><B>0.00% (0/2)</B><B> line: </B><B>32</B><B> source: </B><B>while (value > 0) begin</B>
+
+value > 0<BR>
+<B><</B>-<B>1</B>-<B>></B>   <B><2></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+-------------------------------- '>'
+2.1.1     | 0     | lhs &gt; rhs 
+2.1.2     | 0     | lhs &lt;= rhs 
+
+<B>index: </B><B>4.1</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>44</B><B> source: </B><B>match_address = (address[WIDTH-1:LSB] == START_ADDRESS[WIDTH-1:LSB]);</B>
+
+address[(WIDTH - 1):LSB] == START_ADDRESS[(WIDTH - 1):LSB]<BR>
+<B><</B>----------<B>1</B>-----------<B>></B>    <B><</B>-------------<B>2</B>--------------<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+-------------------------------- '=='
+4.1.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>5.1</B><B> grade: </B><B>0.00% (0/3)</B><B> line: </B><B>48</B><B> source: </B><B>(address[WIDTH-1:LSB] >= START_ADDRESS[WIDTH-1:LSB]) &&</B>
+
+(address[(WIDTH - 1):LSB] >= START_ADDRESS[(WIDTH - 1):LSB]) && (address[(WIDTH - 1):LSB] <= END_ADDRESS[(WIDTH - 1):LSB])<BR>
+<B><</B>----------------------------<B>1</B>-----------------------------<B>></B>    <B><</B>---------------------------<B>2</B>----------------------------<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+---------------------------- '&&'
+5.1.1     | 0     | 0   -   
+5.1.2     | 0     | -   0   
+5.1.3     | 0     | 1   1   
+
+<B>index: </B><B>5.2</B><B> grade: </B><B>0.00% (0/2)</B><B> line: </B><B>48</B><B> source: </B><B>(address[WIDTH-1:LSB] >= START_ADDRESS[WIDTH-1:LSB]) &&</B>
+
+(address[(WIDTH - 1):LSB] >= START_ADDRESS[(WIDTH - 1):LSB])<BR>
+ <B><</B>----------<B>3</B>-----------<B>></B>    <B><</B>-------------<B>4</B>--------------<B>></B>
+
+index     | hit   | &lt;3&gt; &lt;4&gt; 
+-------------------------------- '>='
+5.2.1     | 0     | lhs &lt; rhs 
+5.2.2     | 0     | lhs &gt;= rhs 
+
+<B>index: </B><B>5.3</B><B> grade: </B><B>0.00% (0/2)</B><B> line: </B><B>49</B><B> source: </B><B>(address[WIDTH-1:LSB] <= END_ADDRESS[WIDTH-1:LSB]  );</B>
+
+(address[(WIDTH - 1):LSB] <= END_ADDRESS[(WIDTH - 1):LSB])<BR>
+ <B><</B>----------<B>5</B>-----------<B>></B>    <B><</B>------------<B>6</B>-------------<B>></B>
+
+index     | hit   | &lt;5&gt; &lt;6&gt; 
+-------------------------------- '<='
+5.3.1     | 0     | lhs &gt; rhs 
+5.3.2     | 0     | lhs &lt;= rhs 
+
+<B>index: </B><B>7.1</B><B> grade: </B><B>0.00% (0/2)</B><B> line: </B><B>61</B><B> source: </B><B>match_access  = !access[ACCESS_BIT];</B>
+
+! access[ACCESS_BIT]<BR>
+  <B><</B>-------<B>1</B>--------<B>></B>
+
+index     | hit   | &lt;1&gt; 
+------------------------ '!'
+7.1.1     | 0     | 1   
+7.1.2     | 0     | 0   
+
+
+</PRE>
+<A NAME="_Togglecov"></A>
+<P class="detail_title">     Uncovered Toggle Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.mem_ctrl_inst.CSR_registers_inst.g_CE_CNT_REG.u_register.u_register_common.g_decoder[0].u_decoder<BR>
+<B>Type name: </B>rggen_address_decoder<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_address_decoder.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_address_decoder.v</A><BR><B>Number of uncovered signal bits: </B>13 of 16<BR>
+<B>Number of unreachable signal bits: </B>0<BR>
+<B>Number of signal bits partially toggled(rise): </B>0 of 16<BR>
+<B>Number of signal bits partially toggled(fall): </B>0 of 16<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Hit(Full)  Hit(Rise)  Hit(Fall)  Signal                    
+-----------------------------------------------------------
+0          0          0          i_address[9]              
+0          0          0          i_address[8]              
+0          0          0          i_address[7]              
+0          0          0          i_address[6]              
+0          0          0          i_address[5]              
+0          0          0          i_address[4]              
+0          0          0          i_address[1]              
+0          0          0          i_address[0]              
+0          0          0          i_access[1]               
+0          0          0          i_additional_match        
+0          0          0          o_match                   
+0          0          0          w_address_match           
+0          0          0          w_access_match            
+
+</PRE>
+<A NAME="_Fsmcov"></A>
+<P class="detail_title">     Uncovered Fsm Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.mem_ctrl_inst.CSR_registers_inst.g_CE_CNT_REG.u_register.u_register_common.g_decoder[0].u_decoder<BR>
+<B>Type name: </B>rggen_address_decoder<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_address_decoder.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_address_decoder.v</A><BR>
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+
+0 items found
+
+</PRE>
+<A NAME="_Assertioncov"></A>
+<P class="detail_title">     Uncovered Assertion Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.mem_ctrl_inst.CSR_registers_inst.g_CE_CNT_REG.u_register.u_register_common.g_decoder[0].u_decoder<BR>
+<B>Type name: </B>rggen_address_decoder<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_address_decoder.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_address_decoder.v</A><BR><B>Number of uncovered assertions: </B>0 of 0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Finished Failed Assertion                      Line  Source Code                    
+------------------------------------------------------------------------------------
+
+0 items found
+
+</PRE>
+<A NAME="_CoverGroupcov"></A>
+<P class="detail_title">     Covered+Uncovered+Excluded+UNR CoverGroup Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.mem_ctrl_inst.CSR_registers_inst.g_CE_CNT_REG.u_register.u_register_common.g_decoder[0].u_decoder<BR>
+<B>Type name: </B>rggen_address_decoder<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_address_decoder.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_address_decoder.v</A><BR><B>Number of covered cover bins: </B>0 of 0<BR>
+<B>Number of uncovered cover bins: </B>0 of 0<BR>
+<B>Number of excluded cover bins: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+
+0 items found
+
+</PRE>

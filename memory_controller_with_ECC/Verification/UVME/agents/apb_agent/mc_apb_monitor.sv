@@ -18,15 +18,14 @@ class mc_apb_monitor extends uvm_monitor;
     //build phase
     function void build_phase(uvm_phase phase);
         super.build_phase(phase);
+        
+        analysis_port = new("analysis_port", this);
         `uvm_info("APB_Monitor_class", "Inside Build Phase!", UVM_MEDIUM)
 
-    if (!uvm_config_db#(virtual mc_apb_interface)::get(this, "*", "mc_apb_interface", apb_intf)) 
+    if (!uvm_config_db#(virtual mc_apb_interface)::get(this, "", "mc_apb_interface", apb_intf)) 
         begin
             `uvm_fatal(get_full_name(), "Error while getting read interface from top apb monitor")
-        end
-
-        analysis_port = new("analysis_port", this);
-    
+        end    
     endfunction
 
     //run phase

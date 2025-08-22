@@ -3,7 +3,7 @@ class mc_interrupt_enable_sequence extends uvm_sequence#(mc_axi_seq_item);
 //factory registration
   `uvm_object_utils (mc_interrupt_enable_sequence)
 
-  //constraint addr_c { awaddr < 32'h1000_0000; }
+  //constraint addr_c { awaddr < 32'h100_0000; }
 
   mc_axi_seq_item axi_seq_item;        
      int scenario;
@@ -65,7 +65,7 @@ class mc_interrupt_enable_sequence extends uvm_sequence#(mc_axi_seq_item);
 
     if (scenario == 4)
         begin
-        for (int i = 0; i < 1; i++) 
+        for (int i = 0; i < 10; i++) 
          begin
 
            `uvm_info(get_type_name(),$sformatf("Write scenario 4 Started"),UVM_MEDIUM) 
@@ -95,7 +95,7 @@ class mc_interrupt_enable_sequence extends uvm_sequence#(mc_axi_seq_item);
    
     if (scenario == 5)
         begin
-        for (int i = 0; i < 1; i++) 
+        for (int i = 0; i < 10; i++) 
          begin
 
            `uvm_info(get_type_name(),$sformatf("Read scenario 5 Started"),UVM_MEDIUM) 

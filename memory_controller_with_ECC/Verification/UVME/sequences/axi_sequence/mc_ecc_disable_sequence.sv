@@ -37,6 +37,7 @@ class mc_ecc_disable_sequence extends uvm_sequence#(mc_axi_seq_item);
          end
 
     if (scenario == 2)
+        repeat(100)
          begin
                         // Read back the data to verify
                     `uvm_do_with(axi_seq_item, {
@@ -63,6 +64,7 @@ class mc_ecc_disable_sequence extends uvm_sequence#(mc_axi_seq_item);
          end 
     
     if (scenario == 3)
+        repeat(100)
          begin
                         // Read back the data to verify
                     `uvm_do_with(axi_seq_item, {

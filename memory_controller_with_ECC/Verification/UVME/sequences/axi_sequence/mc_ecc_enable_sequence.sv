@@ -27,6 +27,7 @@ class mc_ecc_enable_sequence extends uvm_sequence#(mc_axi_seq_item);
 
 // reset zero 
     if(scenario == 1)
+        repeat(100)
          begin
 
            `uvm_info(get_type_name(),$sformatf("Reset scenario 1 Started"),UVM_MEDIUM) 
@@ -39,6 +40,7 @@ class mc_ecc_enable_sequence extends uvm_sequence#(mc_axi_seq_item);
 
 // reset zero 
     if(scenario == 2)
+        repeat(100)
          begin
 
            `uvm_info(get_type_name(),$sformatf("Reset disable scenario 2 Started"),UVM_MEDIUM) 
@@ -58,6 +60,7 @@ class mc_ecc_enable_sequence extends uvm_sequence#(mc_axi_seq_item);
          end
 
     if (scenario == 4)
+        repeat(100)
          begin
 
            `uvm_info(get_type_name(),$sformatf("Write scenario 4 Started"),UVM_MEDIUM) 
@@ -85,6 +88,7 @@ class mc_ecc_enable_sequence extends uvm_sequence#(mc_axi_seq_item);
          end 
     
     if (scenario == 5)
+        repeat(100)
          begin
 
            `uvm_info(get_type_name(),$sformatf("Read scenario 5 Started"),UVM_MEDIUM) 

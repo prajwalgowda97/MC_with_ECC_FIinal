@@ -1,0 +1,2 @@
+[INFO ] 2025-08-22 15:35:11,548 [com.cadence.mdv.imc.Main] [main] - Binding debug tools http on port: 39093
+[ERROR] 2025-08-22 15:35:13,622 [com.cadence.mdv.messaging.MDVASynchronicMessaging] [frontend-pool-1] - 0utput directory ./cov_report_html already exists, and will not be overwritten. Use the '-overwrite' option to overwrite the existing directory, or specify a different directory name with the -out option, and rerun the command.

@@ -1,0 +1,953 @@
+<HTML>
+<HEAD>
+<link type="text/css" rel="stylesheet" href="../../imc.css"></link>
+<script type="text/javascript" src="../../sortable.js"></script>
+<TITLE>IMC Report: ./cov_report_html</TITLE></HEAD>
+<BODY>
+<A NAME="_topcov"></A>
+<P class="summary_title">Coverage   Summary Report, Instance-Based</P>
+
+<P class="fs"><A STYLE="float: left" class="namet" HREF="../../index.html">Top Level Summary</A><A STYLE="float: right" class="namet" HREF="../../legend.html">Legend and Help</A></P>
+<BR>
+<TABLE class="detail_header"><TR class="detail"><TD>
+
+<B>Instance name: </B><A HREF="../dir_1/summ_5_t1.html" class="namet">zmc_axi4_top</A><A HREF="../dir_1/summ_7_t1.html" class="namet">.mem_ctrl_inst</A><A HREF="../dir_1/summ_15_t1.html" class="namet">.CSR_registers_inst</A><A HREF="../dir_1/summ_128_t1.html" class="namet">.g_CE_FFE_REG</A><A HREF="../dir_1/summ_135_t1.html" class="namet">.g_CE_FFE_REG</A>.u_bit_field<BR>
+
+<B>Type name: </B>rggen_bit_field<BR>
+
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_bit_field.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_bit_field.v</A><BR>
+
+</TD></TR></TABLE>
+
+<BR>
+<P class="subtitle">Coverage Summary Report, Instance-Based</P>
+<TABLE class="sortable sml summary_table" id="totalTable">
+
+
+<TR><TH class="wht">Overall</TH>
+<TH class="wht">Overall Covered</TH>
+<TH class="wht">Block</TH>
+<TH class="wht">Expression</TH>
+<TH class="wht">Toggle</TH>
+<TH class="wht">FSM&nbsp;State</TH>
+<TH class="wht">FSM&nbsp;Transition</TH>
+<TH class="wht">Assertion</TH>
+<TH class="wht">CoverGroup</TH>
+<TH class="wht">CoverGroup Covered</TH>
+<TH class="wht">name</TH>
+
+</TR>
+
+<TR><TD class="range15to19"><A HREF="">15.76%</A></TD>
+<TD class="range05to09"><A HREF="">5.34%&nbsp;(31/581/8)</A></TD>
+<TD class="range20to24"><A HREF="#_Blockcov">23.26%&nbsp;(10/43)</A></TD>
+<TD class="range20to24"><A HREF="#_Expressioncov">23.38%&nbsp;(18/77/8)</A></TD>
+<TD class="range0"><A HREF="#_Togglecov">0.65%&nbsp;(3/461)</A></TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="rangenone">n/a</TD>
+<TD class="namecell">u_bit_field</TD>
+
+</TR>
+
+
+</TABLE>
+<A NAME="_Blockcov"></A>
+<P class="detail_title">     Uncovered Block Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.mem_ctrl_inst.CSR_registers_inst.g_CE_FFE_REG.g_CE_FFE_REG.u_bit_field<BR>
+<B>Type name: </B>rggen_bit_field<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_bit_field.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_bit_field.v</A><BR><B>Number of uncovered blocks: </B>33 of 43<BR>
+<B>Number of unreachable blocks: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Count  Block Line  Kind                 Origin Source Code                    
+------------------------------------------------------------------------------
+0      3     89    code block           78     begin                          
+0      4     90    true part of         90     if (PRECEDENCE_ACCESS == `RGGEN_SW_ACCESS) begin 
+0      5     101   false part of        90     else begin                     
+0      6     113   code block           113    get_next_value  = value;       
+0      7     125   code block           117    begin                          
+0      8     127   a case item of       126    `RGGEN_READ_CLEAR:  value[0]  = {WIDTH{1'b0}}; 
+0      9     128   a case item of       126    `RGGEN_READ_SET:    value[0]  = {WIDTH{1'b1}}; 
+0      10    129   a case item of       126    default:            value[0]  = current_value; 
+0      11    132   code block           132    masked_data[0]  = write_mask & (~write_data); 
+0      12    135   a case item of       134    `RGGEN_WRITE_DEFAULT:   value[1]  = (current_value & (~write_mask)) | masked_data[1]; 
+0      13    136   a case item of       134    `RGGEN_WRITE_0_CLEAR:   value[1]  = current_value & (~masked_data[0]); 
+0      14    137   a case item of       134    `RGGEN_WRITE_1_CLEAR:   value[1]  = current_value & (~masked_data[1]); 
+0      15    138   a case item of       134    `RGGEN_WRITE_CLEAR:     value[1]  = {WIDTH{1'b0}}; 
+0      16    139   a case item of       134    `RGGEN_WRITE_0_SET:     value[1]  = current_value | masked_data[0]; 
+0      17    140   a case item of       134    `RGGEN_WRITE_1_SET:     value[1]  = current_value | masked_data[1]; 
+0      18    141   a case item of       134    `RGGEN_WRITE_SET:       value[1]  = {WIDTH{1'b1}}; 
+0      19    142   a case item of       134    `RGGEN_WRITE_0_TOGGLE:  value[1]  = current_value ^ masked_data[0]; 
+0      20    143   a case item of       134    `RGGEN_WRITE_1_TOGGLE:  value[1]  = current_value ^ masked_data[1]; 
+0      21    144   a case item of       134    default:                value[1]  = current_value; 
+0      22    147   code block           147    case (update)                  
+0      23    148   a case item of       147    2'b01:    get_sw_next_value = value[0]; 
+0      24    149   a case item of       147    2'b10:    get_sw_next_value = value[1]; 
+0      25    150   a case item of       147    default:  get_sw_next_value = current_value; 
+0      26    164   code block           155    begin                          
+0      27    165   true part of         165    if (HW_SET_WIDTH == WIDTH) begin 
+0      28    168   false part of        165    else begin                     
+0      29    172   code block           172    if (HW_CLEAR_WIDTH == WIDTH) begin 
+0      30    172   true part of         172    if (HW_CLEAR_WIDTH == WIDTH) begin 
+0      31    175   false part of        172    else begin                     
+0      32    179   code block           179    if (write_enable == HW_WRITE_ENABLE_POLARITY) begin 
+0      33    179   true part of         179    if (write_enable == HW_WRITE_ENABLE_POLARITY) begin 
+0      34    182   false part of        179    else begin                     
+0      35    186   code block           186    get_hw_next_value = (value & (~set_clear[1])) | set_clear[0]; 
+
+</PRE>
+<A NAME="_Expressioncov"></A>
+<P class="detail_title">     Uncovered Expression Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.mem_ctrl_inst.CSR_registers_inst.g_CE_FFE_REG.g_CE_FFE_REG.u_bit_field<BR>
+<B>Type name: </B>rggen_bit_field<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_bit_field.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_bit_field.v</A><BR><B>Number of uncovered expressions: </B>59 of 77<BR>
+<B>Number of unreachable expressions: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+index  | grade         | line   | expression                                         
+-------------------------------------------------------------------------------------
+3.1    | 50.00% (1/2)  | 56     | read_mask != {WIDTH{1'b0}}                         
+4.1    | 50.00% (2/4)  | 57     | ((write_mask != {WIDTH{1'b0}}) && (write_enable == SW_WRITE_ENABLE_POLARITY)) && (! write_done) 
+4.2    | 50.00% (1/2)  | 57     | (write_mask != {WIDTH{1'b0}})                      
+4.3    | 50.00% (1/2)  | 57     | (write_enable == SW_WRITE_ENABLE_POLARITY)         
+5.1    | 75.00% (3/4)  | 59     | (valid && action[0]) && access[0]                  
+6.1    | 50.00% (2/4)  | 60     | (valid && action[1]) && access[1]                  
+7.1    | 50.00% (1/2)  | 71     | write_enable == HW_WRITE_ENABLE_POLARITY           
+8.1    | 50.00% (1/2)  | 72     | set != {HW_SET_WIDTH{1'b0}}                        
+9.1    | 50.00% (1/2)  | 73     | clear != {HW_CLEAR_WIDTH{1'b0}}                    
+10.1   | 25.00% (1/4)  | 74     | (update[0] || update[1]) || update[2]              
+11.1   | 0.00% (0/1/1) | 90     | PRECEDENCE_ACCESS == 0                             
+12.1   | 0.00% (0/3)   | 132    | write_mask & (~ write_data)                        
+13.1   | 0.00% (0/3)   | 133    | write_mask & write_data                            
+14.1   | 0.00% (0/4)   | 135    | (current_value & (~ write_mask)) | masked_data[1]  
+15.1   | 0.00% (0/3)   | 136    | current_value & (~ masked_data[0])                 
+16.1   | 0.00% (0/3)   | 137    | current_value & (~ masked_data[1])                 
+17.1   | 0.00% (0/3)   | 139    | current_value | masked_data[0]                     
+18.1   | 0.00% (0/3)   | 140    | current_value | masked_data[1]                     
+19.1   | 0.00% (0/4)   | 142    | current_value ^ masked_data[0]                     
+20.1   | 0.00% (0/4)   | 143    | current_value ^ masked_data[1]                     
+21.1   | 0.00% (0/1/1) | 165    | HW_SET_WIDTH == WIDTH                              
+22.1   | 0.00% (0/1/1) | 172    | HW_CLEAR_WIDTH == WIDTH                            
+23.1   | 0.00% (0/2)   | 179    | write_enable == HW_WRITE_ENABLE_POLARITY           
+24.1   | 0.00% (0/4)   | 186    | (value & (~ set_clear[1])) | set_clear[0]          
+25.1   | 0.00% (0/3)   | 202    | w_read_data & i_mask                               
+26.1   | 0.00% (0/3)   | 206    | w_value & i_mask                                   
+
+<B>index: </B><B>3.1</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>56</B><B> source: </B><B>access[0] = (read_mask  != {WIDTH{1'b0}});</B>
+
+read_mask != {WIDTH{1'b0}}<BR>
+<B><</B>---<B>1</B>---<B>></B>    <B><</B>-----<B>2</B>-----<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+-------------------------------- '!='
+3.1.2     | 0     | lhs != rhs  
+
+<B>index: </B><B>4.1</B><B> grade: </B><B>50.00% (2/4)</B><B> line: </B><B>57</B><B> source: </B><B>access[1] = (write_mask != {WIDTH{1'b0}}) && (write_enable == SW_WRITE_ENABLE_POLARITY) && (!write_done);</B>
+
+((write_mask != {WIDTH{1'b0}}) && (write_enable == SW_WRITE_ENABLE_POLARITY)) && (! write_done)<BR>
+ <B><</B>-------------<B>1</B>-------------<B>></B>    <B><</B>-------------------<B>2</B>--------------------<B>></B>        <B><</B>---<B>3</B>----<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; &lt;3&gt; 
+---------------------------------------
+4.1.1     | 0     | 1    | 1   1   0   
+4.1.2     | 0     | 0    | -   -   1   
+
+<B>index: </B><B>4.2</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>57</B><B> source: </B><B>access[1] = (write_mask != {WIDTH{1'b0}}) && (write_enable == SW_WRITE_ENABLE_POLARITY) && (!write_done);</B>
+
+(write_mask != {WIDTH{1'b0}})<BR>
+ <B><</B>---<B>4</B>----<B>></B>    <B><</B>-----<B>5</B>-----<B>></B>
+
+index     | hit   | &lt;4&gt; &lt;5&gt; 
+-------------------------------- '!='
+4.2.2     | 0     | lhs != rhs  
+
+<B>index: </B><B>4.3</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>57</B><B> source: </B><B>access[1] = (write_mask != {WIDTH{1'b0}}) && (write_enable == SW_WRITE_ENABLE_POLARITY) && (!write_done);</B>
+
+(write_enable == SW_WRITE_ENABLE_POLARITY)<BR>
+ <B><</B>----<B>6</B>-----<B>></B>    <B><</B>----------<B>7</B>-----------<B>></B>
+
+index     | hit   | &lt;6&gt; &lt;7&gt; 
+-------------------------------- '=='
+4.3.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>5.1</B><B> grade: </B><B>75.00% (3/4)</B><B> line: </B><B>59</B><B> source: </B><B>get_sw_update[0]  = valid && action[0] && access[0];</B>
+
+(valid && action[0]) && access[0]<BR>
+ <B><</B>-<B>1</B>-<B>></B>    <B><</B>---<B>2</B>---<B>></B>     <B><</B>---<B>3</B>---<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; &lt;3&gt; 
+-------------------------------- '&&'
+5.1.4     | 0     | 1   1   1   
+
+<B>index: </B><B>6.1</B><B> grade: </B><B>50.00% (2/4)</B><B> line: </B><B>60</B><B> source: </B><B>get_sw_update[1]  = valid && action[1] && access[1];</B>
+
+(valid && action[1]) && access[1]<BR>
+ <B><</B>-<B>1</B>-<B>></B>    <B><</B>---<B>2</B>---<B>></B>     <B><</B>---<B>3</B>---<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; &lt;3&gt; 
+-------------------------------- '&&'
+6.1.2     | 0     | -   0   -   
+6.1.4     | 0     | 1   1   1   
+
+<B>index: </B><B>7.1</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>71</B><B> source: </B><B>update[0]     = write_enable == HW_WRITE_ENABLE_POLARITY;</B>
+
+write_enable == HW_WRITE_ENABLE_POLARITY<BR>
+<B><</B>----<B>1</B>-----<B>></B>    <B><</B>----------<B>2</B>-----------<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+-------------------------------- '=='
+7.1.1     | 0     | lhs == rhs  
+
+<B>index: </B><B>8.1</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>72</B><B> source: </B><B>update[1]     = set   != {HW_SET_WIDTH{1'b0}};</B>
+
+set != {HW_SET_WIDTH{1'b0}}<BR>
+<B><1></B>    <B><</B>--------<B>2</B>---------<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+-------------------------------- '!='
+8.1.2     | 0     | lhs != rhs  
+
+<B>index: </B><B>9.1</B><B> grade: </B><B>50.00% (1/2)</B><B> line: </B><B>73</B><B> source: </B><B>update[2]     = clear != {HW_CLEAR_WIDTH{1'b0}};</B>
+
+clear != {HW_CLEAR_WIDTH{1'b0}}<BR>
+<B><</B>-<B>1</B>-<B>></B>    <B><</B>---------<B>2</B>----------<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+-------------------------------- '!='
+9.1.2     | 0     | lhs != rhs  
+
+<B>index: </B><B>10.1</B><B> grade: </B><B>25.00% (1/4)</B><B> line: </B><B>74</B><B> source: </B><B>get_hw_update = update[0] || update[1] || update[2];</B>
+
+(update[0] || update[1]) || update[2]<BR>
+ <B><</B>---<B>1</B>---<B>></B>    <B><</B>---<B>2</B>---<B>></B>     <B><</B>---<B>3</B>---<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; &lt;3&gt; 
+-------------------------------- '||'
+10.1.1    | 0     | 1   -   -   
+10.1.2    | 0     | -   1   -   
+10.1.3    | 0     | -   -   1   
+
+<B>index: </B><B>11.1</B><B> grade: </B><B>0.00% (0/1/1)</B><B> line: </B><B>90</B><B> source: </B><B>if (PRECEDENCE_ACCESS == `RGGEN_SW_ACCESS) begin</B>
+
+PRECEDENCE_ACCESS == 0<BR>
+<B><</B>-------<B>1</B>-------<B>></B>    <B><2></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+-------------------------------- '=='
+11.1.2    | 0     | lhs != rhs  
+
+<B>index: </B><B>12.1</B><B> grade: </B><B>0.00% (0/3)</B><B> line: </B><B>132</B><B> source: </B><B>masked_data[0]  = write_mask & (~write_data);</B>
+
+write_mask & (~ write_data)<BR>
+<B><</B>---<B>1</B>----<B>></B>      <B><</B>---<B>2</B>----<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; 
+-----------------------------------
+12.1.1    | 0     | 1    | 1   0   
+12.1.2    | 0     | 0    | -   1   
+12.1.3    | 0     | 0    | 0   -   
+
+<B>index: </B><B>13.1</B><B> grade: </B><B>0.00% (0/3)</B><B> line: </B><B>133</B><B> source: </B><B>masked_data[1]  = write_mask & ( write_data);</B>
+
+write_mask & write_data<BR>
+<B><</B>---<B>1</B>----<B>></B>   <B><</B>---<B>2</B>----<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+---------------------------- '&'
+13.1.1    | 0     | 0   -   
+13.1.2    | 0     | -   0   
+13.1.3    | 0     | 1   1   
+
+<B>index: </B><B>14.1</B><B> grade: </B><B>0.00% (0/4)</B><B> line: </B><B>135</B><B> source: </B><B>`RGGEN_WRITE_DEFAULT:   value[1]  = (current_value & (~write_mask)) | masked_data[1];</B>
+
+(current_value & (~ write_mask)) | masked_data[1]<BR>
+ <B><</B>-----<B>1</B>-----<B>></B>      <B><</B>---<B>2</B>----<B>></B>     <B><</B>-----<B>3</B>------<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; &lt;3&gt; 
+---------------------------------------
+14.1.1    | 0     | 1    | -   -   1   
+14.1.2    | 0     | 1    | 1   0   -   
+14.1.3    | 0     | 0    | -   1   0   
+14.1.4    | 0     | 0    | 0   -   0   
+
+<B>index: </B><B>15.1</B><B> grade: </B><B>0.00% (0/3)</B><B> line: </B><B>136</B><B> source: </B><B>`RGGEN_WRITE_0_CLEAR:   value[1]  = current_value & (~masked_data[0]);</B>
+
+current_value & (~ masked_data[0])<BR>
+<B><</B>-----<B>1</B>-----<B>></B>      <B><</B>-----<B>2</B>------<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; 
+-----------------------------------
+15.1.1    | 0     | 1    | 1   0   
+15.1.2    | 0     | 0    | -   1   
+15.1.3    | 0     | 0    | 0   -   
+
+<B>index: </B><B>16.1</B><B> grade: </B><B>0.00% (0/3)</B><B> line: </B><B>137</B><B> source: </B><B>`RGGEN_WRITE_1_CLEAR:   value[1]  = current_value & (~masked_data[1]);</B>
+
+current_value & (~ masked_data[1])<BR>
+<B><</B>-----<B>1</B>-----<B>></B>      <B><</B>-----<B>2</B>------<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; 
+-----------------------------------
+16.1.1    | 0     | 1    | 1   0   
+16.1.2    | 0     | 0    | -   1   
+16.1.3    | 0     | 0    | 0   -   
+
+<B>index: </B><B>17.1</B><B> grade: </B><B>0.00% (0/3)</B><B> line: </B><B>139</B><B> source: </B><B>`RGGEN_WRITE_0_SET:     value[1]  = current_value | masked_data[0];</B>
+
+current_value | masked_data[0]<BR>
+<B><</B>-----<B>1</B>-----<B>></B>   <B><</B>-----<B>2</B>------<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+---------------------------- '|'
+17.1.1    | 0     | 1   -   
+17.1.2    | 0     | -   1   
+17.1.3    | 0     | 0   0   
+
+<B>index: </B><B>18.1</B><B> grade: </B><B>0.00% (0/3)</B><B> line: </B><B>140</B><B> source: </B><B>`RGGEN_WRITE_1_SET:     value[1]  = current_value | masked_data[1];</B>
+
+current_value | masked_data[1]<BR>
+<B><</B>-----<B>1</B>-----<B>></B>   <B><</B>-----<B>2</B>------<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+---------------------------- '|'
+18.1.1    | 0     | 1   -   
+18.1.2    | 0     | -   1   
+18.1.3    | 0     | 0   0   
+
+<B>index: </B><B>19.1</B><B> grade: </B><B>0.00% (0/4)</B><B> line: </B><B>142</B><B> source: </B><B>`RGGEN_WRITE_0_TOGGLE:  value[1]  = current_value ^ masked_data[0];</B>
+
+current_value ^ masked_data[0]<BR>
+<B><</B>-----<B>1</B>-----<B>></B>   <B><</B>-----<B>2</B>------<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+---------------------------- '^'
+19.1.1    | 0     | 0   0   
+19.1.2    | 0     | 0   1   
+19.1.3    | 0     | 1   0   
+19.1.4    | 0     | 1   1   
+
+<B>index: </B><B>20.1</B><B> grade: </B><B>0.00% (0/4)</B><B> line: </B><B>143</B><B> source: </B><B>`RGGEN_WRITE_1_TOGGLE:  value[1]  = current_value ^ masked_data[1];</B>
+
+current_value ^ masked_data[1]<BR>
+<B><</B>-----<B>1</B>-----<B>></B>   <B><</B>-----<B>2</B>------<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+---------------------------- '^'
+20.1.1    | 0     | 0   0   
+20.1.2    | 0     | 0   1   
+20.1.3    | 0     | 1   0   
+20.1.4    | 0     | 1   1   
+
+<B>index: </B><B>21.1</B><B> grade: </B><B>0.00% (0/1/1)</B><B> line: </B><B>165</B><B> source: </B><B>if (HW_SET_WIDTH == WIDTH) begin</B>
+
+HW_SET_WIDTH == WIDTH<BR>
+<B><</B>----<B>1</B>-----<B>></B>    <B><</B>-<B>2</B>-<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+-------------------------------- '=='
+21.1.1    | 0     | lhs == rhs  
+
+<B>index: </B><B>22.1</B><B> grade: </B><B>0.00% (0/1/1)</B><B> line: </B><B>172</B><B> source: </B><B>if (HW_CLEAR_WIDTH == WIDTH) begin</B>
+
+HW_CLEAR_WIDTH == WIDTH<BR>
+<B><</B>-----<B>1</B>------<B>></B>    <B><</B>-<B>2</B>-<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+-------------------------------- '=='
+22.1.1    | 0     | lhs == rhs  
+
+<B>index: </B><B>23.1</B><B> grade: </B><B>0.00% (0/2)</B><B> line: </B><B>179</B><B> source: </B><B>if (write_enable == HW_WRITE_ENABLE_POLARITY) begin</B>
+
+write_enable == HW_WRITE_ENABLE_POLARITY<BR>
+<B><</B>----<B>1</B>-----<B>></B>    <B><</B>----------<B>2</B>-----------<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+-------------------------------- '=='
+23.1.1    | 0     | lhs == rhs  
+23.1.2    | 0     | lhs != rhs  
+
+<B>index: </B><B>24.1</B><B> grade: </B><B>0.00% (0/4)</B><B> line: </B><B>186</B><B> source: </B><B>get_hw_next_value = (value & (~set_clear[1])) | set_clear[0];</B>
+
+(value & (~ set_clear[1])) | set_clear[0]<BR>
+ <B><</B>-<B>1</B>-<B>></B>      <B><</B>----<B>2</B>-----<B>></B>     <B><</B>----<B>3</B>-----<B>></B>
+
+index     | hit   | rval | &lt;1&gt; &lt;2&gt; &lt;3&gt; 
+---------------------------------------
+24.1.1    | 0     | 1    | -   -   1   
+24.1.2    | 0     | 1    | 1   0   -   
+24.1.3    | 0     | 0    | -   1   0   
+24.1.4    | 0     | 0    | 0   -   0   
+
+<B>index: </B><B>25.1</B><B> grade: </B><B>0.00% (0/3)</B><B> line: </B><B>202</B><B> source: </B><B>assign  o_sw_read_data    = w_read_data & i_mask;</B>
+
+w_read_data & i_mask<BR>
+<B><</B>----<B>1</B>----<B>></B>   <B><</B>-<B>2</B>--<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+---------------------------- '&'
+25.1.1    | 0     | 0   -   
+25.1.2    | 0     | -   0   
+25.1.3    | 0     | 1   1   
+
+<B>index: </B><B>26.1</B><B> grade: </B><B>0.00% (0/3)</B><B> line: </B><B>206</B><B> source: </B><B>assign  o_value           = w_value & i_mask;</B>
+
+w_value & i_mask<BR>
+<B><</B>--<B>1</B>--<B>></B>   <B><</B>-<B>2</B>--<B>></B>
+
+index     | hit   | &lt;1&gt; &lt;2&gt; 
+---------------------------- '&'
+26.1.1    | 0     | 0   -   
+26.1.2    | 0     | -   0   
+26.1.3    | 0     | 1   1   
+
+
+</PRE>
+<A NAME="_Togglecov"></A>
+<P class="detail_title">     Uncovered Toggle Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.mem_ctrl_inst.CSR_registers_inst.g_CE_FFE_REG.g_CE_FFE_REG.u_bit_field<BR>
+<B>Type name: </B>rggen_bit_field<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_bit_field.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_bit_field.v</A><BR><B>Number of uncovered signal bits: </B>458 of 461<BR>
+<B>Number of unreachable signal bits: </B>0<BR>
+<B>Number of signal bits partially toggled(rise): </B>1 of 461<BR>
+<B>Number of signal bits partially toggled(fall): </B>0 of 461<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Hit(Full)  Hit(Rise)  Hit(Fall)  Signal                    
+-----------------------------------------------------------
+0          1          0          i_rst_n                   
+0          0          0          i_sw_valid                
+0          0          0          i_sw_read_mask[31]        
+0          0          0          i_sw_read_mask[30]        
+0          0          0          i_sw_read_mask[29]        
+0          0          0          i_sw_read_mask[28]        
+0          0          0          i_sw_read_mask[27]        
+0          0          0          i_sw_read_mask[26]        
+0          0          0          i_sw_read_mask[25]        
+0          0          0          i_sw_read_mask[24]        
+0          0          0          i_sw_read_mask[23]        
+0          0          0          i_sw_read_mask[22]        
+0          0          0          i_sw_read_mask[21]        
+0          0          0          i_sw_read_mask[20]        
+0          0          0          i_sw_read_mask[19]        
+0          0          0          i_sw_read_mask[18]        
+0          0          0          i_sw_read_mask[17]        
+0          0          0          i_sw_read_mask[16]        
+0          0          0          i_sw_read_mask[15]        
+0          0          0          i_sw_read_mask[14]        
+0          0          0          i_sw_read_mask[13]        
+0          0          0          i_sw_read_mask[12]        
+0          0          0          i_sw_read_mask[11]        
+0          0          0          i_sw_read_mask[10]        
+0          0          0          i_sw_read_mask[9]         
+0          0          0          i_sw_read_mask[8]         
+0          0          0          i_sw_read_mask[7]         
+0          0          0          i_sw_read_mask[6]         
+0          0          0          i_sw_read_mask[5]         
+0          0          0          i_sw_read_mask[4]         
+0          0          0          i_sw_read_mask[3]         
+0          0          0          i_sw_read_mask[2]         
+0          0          0          i_sw_read_mask[1]         
+0          0          0          i_sw_read_mask[0]         
+0          0          0          i_sw_write_enable         
+0          0          0          i_sw_write_mask[31]       
+0          0          0          i_sw_write_mask[30]       
+0          0          0          i_sw_write_mask[29]       
+0          0          0          i_sw_write_mask[28]       
+0          0          0          i_sw_write_mask[27]       
+0          0          0          i_sw_write_mask[26]       
+0          0          0          i_sw_write_mask[25]       
+0          0          0          i_sw_write_mask[24]       
+0          0          0          i_sw_write_mask[23]       
+0          0          0          i_sw_write_mask[22]       
+0          0          0          i_sw_write_mask[21]       
+0          0          0          i_sw_write_mask[20]       
+0          0          0          i_sw_write_mask[19]       
+0          0          0          i_sw_write_mask[18]       
+0          0          0          i_sw_write_mask[17]       
+0          0          0          i_sw_write_mask[16]       
+0          0          0          i_sw_write_mask[15]       
+0          0          0          i_sw_write_mask[14]       
+0          0          0          i_sw_write_mask[13]       
+0          0          0          i_sw_write_mask[12]       
+0          0          0          i_sw_write_mask[11]       
+0          0          0          i_sw_write_mask[10]       
+0          0          0          i_sw_write_mask[9]        
+0          0          0          i_sw_write_mask[8]        
+0          0          0          i_sw_write_mask[7]        
+0          0          0          i_sw_write_mask[6]        
+0          0          0          i_sw_write_mask[5]        
+0          0          0          i_sw_write_mask[4]        
+0          0          0          i_sw_write_mask[3]        
+0          0          0          i_sw_write_mask[2]        
+0          0          0          i_sw_write_mask[1]        
+0          0          0          i_sw_write_mask[0]        
+0          0          0          i_sw_write_data[31]       
+0          0          0          i_sw_write_data[30]       
+0          0          0          i_sw_write_data[29]       
+0          0          0          i_sw_write_data[28]       
+0          0          0          i_sw_write_data[27]       
+0          0          0          i_sw_write_data[26]       
+0          0          0          i_sw_write_data[25]       
+0          0          0          i_sw_write_data[24]       
+0          0          0          i_sw_write_data[23]       
+0          0          0          i_sw_write_data[22]       
+0          0          0          i_sw_write_data[21]       
+0          0          0          i_sw_write_data[20]       
+0          0          0          i_sw_write_data[19]       
+0          0          0          i_sw_write_data[18]       
+0          0          0          i_sw_write_data[17]       
+0          0          0          i_sw_write_data[16]       
+0          0          0          i_sw_write_data[15]       
+0          0          0          i_sw_write_data[14]       
+0          0          0          i_sw_write_data[13]       
+0          0          0          i_sw_write_data[12]       
+0          0          0          i_sw_write_data[11]       
+0          0          0          i_sw_write_data[10]       
+0          0          0          i_sw_write_data[9]        
+0          0          0          i_sw_write_data[8]        
+0          0          0          i_sw_write_data[7]        
+0          0          0          i_sw_write_data[6]        
+0          0          0          i_sw_write_data[5]        
+0          0          0          i_sw_write_data[4]        
+0          0          0          i_sw_write_data[3]        
+0          0          0          i_sw_write_data[2]        
+0          0          0          o_sw_read_data[31]        
+0          0          0          o_sw_read_data[30]        
+0          0          0          o_sw_read_data[29]        
+0          0          0          o_sw_read_data[28]        
+0          0          0          o_sw_read_data[27]        
+0          0          0          o_sw_read_data[26]        
+0          0          0          o_sw_read_data[25]        
+0          0          0          o_sw_read_data[24]        
+0          0          0          o_sw_read_data[23]        
+0          0          0          o_sw_read_data[22]        
+0          0          0          o_sw_read_data[21]        
+0          0          0          o_sw_read_data[20]        
+0          0          0          o_sw_read_data[19]        
+0          0          0          o_sw_read_data[18]        
+0          0          0          o_sw_read_data[17]        
+0          0          0          o_sw_read_data[16]        
+0          0          0          o_sw_read_data[15]        
+0          0          0          o_sw_read_data[14]        
+0          0          0          o_sw_read_data[13]        
+0          0          0          o_sw_read_data[12]        
+0          0          0          o_sw_read_data[11]        
+0          0          0          o_sw_read_data[10]        
+0          0          0          o_sw_read_data[9]         
+0          0          0          o_sw_read_data[8]         
+0          0          0          o_sw_read_data[7]         
+0          0          0          o_sw_read_data[6]         
+0          0          0          o_sw_read_data[5]         
+0          0          0          o_sw_read_data[4]         
+0          0          0          o_sw_read_data[3]         
+0          0          0          o_sw_read_data[2]         
+0          0          0          o_sw_read_data[1]         
+0          0          0          o_sw_read_data[0]         
+0          0          0          o_sw_value[31]            
+0          0          0          o_sw_value[30]            
+0          0          0          o_sw_value[29]            
+0          0          0          o_sw_value[28]            
+0          0          0          o_sw_value[27]            
+0          0          0          o_sw_value[26]            
+0          0          0          o_sw_value[25]            
+0          0          0          o_sw_value[24]            
+0          0          0          o_sw_value[23]            
+0          0          0          o_sw_value[22]            
+0          0          0          o_sw_value[21]            
+0          0          0          o_sw_value[20]            
+0          0          0          o_sw_value[19]            
+0          0          0          o_sw_value[18]            
+0          0          0          o_sw_value[17]            
+0          0          0          o_sw_value[16]            
+0          0          0          o_sw_value[15]            
+0          0          0          o_sw_value[14]            
+0          0          0          o_sw_value[13]            
+0          0          0          o_sw_value[12]            
+0          0          0          o_sw_value[11]            
+0          0          0          o_sw_value[10]            
+0          0          0          o_sw_value[9]             
+0          0          0          o_sw_value[8]             
+0          0          0          o_sw_value[7]             
+0          0          0          o_sw_value[6]             
+0          0          0          o_sw_value[5]             
+0          0          0          o_sw_value[4]             
+0          0          0          o_sw_value[3]             
+0          0          0          o_sw_value[2]             
+0          0          0          o_sw_value[1]             
+0          0          0          o_sw_value[0]             
+0          0          0          o_write_trigger           
+0          0          0          o_read_trigger            
+0          0          0          i_hw_write_enable         
+0          0          0          i_hw_write_data[31]       
+0          0          0          i_hw_write_data[30]       
+0          0          0          i_hw_write_data[29]       
+0          0          0          i_hw_write_data[28]       
+0          0          0          i_hw_write_data[27]       
+0          0          0          i_hw_write_data[26]       
+0          0          0          i_hw_write_data[25]       
+0          0          0          i_hw_write_data[24]       
+0          0          0          i_hw_write_data[23]       
+0          0          0          i_hw_write_data[22]       
+0          0          0          i_hw_write_data[21]       
+0          0          0          i_hw_write_data[20]       
+0          0          0          i_hw_write_data[19]       
+0          0          0          i_hw_write_data[18]       
+0          0          0          i_hw_write_data[17]       
+0          0          0          i_hw_write_data[16]       
+0          0          0          i_hw_write_data[15]       
+0          0          0          i_hw_write_data[14]       
+0          0          0          i_hw_write_data[13]       
+0          0          0          i_hw_write_data[12]       
+0          0          0          i_hw_write_data[11]       
+0          0          0          i_hw_write_data[10]       
+0          0          0          i_hw_write_data[9]        
+0          0          0          i_hw_write_data[8]        
+0          0          0          i_hw_write_data[7]        
+0          0          0          i_hw_write_data[6]        
+0          0          0          i_hw_write_data[5]        
+0          0          0          i_hw_write_data[4]        
+0          0          0          i_hw_write_data[3]        
+0          0          0          i_hw_write_data[2]        
+0          0          0          i_hw_write_data[1]        
+0          0          0          i_hw_write_data[0]        
+0          0          0          i_hw_set[31]              
+0          0          0          i_hw_set[30]              
+0          0          0          i_hw_set[29]              
+0          0          0          i_hw_set[28]              
+0          0          0          i_hw_set[27]              
+0          0          0          i_hw_set[26]              
+0          0          0          i_hw_set[25]              
+0          0          0          i_hw_set[24]              
+0          0          0          i_hw_set[23]              
+0          0          0          i_hw_set[22]              
+0          0          0          i_hw_set[21]              
+0          0          0          i_hw_set[20]              
+0          0          0          i_hw_set[19]              
+0          0          0          i_hw_set[18]              
+0          0          0          i_hw_set[17]              
+0          0          0          i_hw_set[16]              
+0          0          0          i_hw_set[15]              
+0          0          0          i_hw_set[14]              
+0          0          0          i_hw_set[13]              
+0          0          0          i_hw_set[12]              
+0          0          0          i_hw_set[11]              
+0          0          0          i_hw_set[10]              
+0          0          0          i_hw_set[9]               
+0          0          0          i_hw_set[8]               
+0          0          0          i_hw_set[7]               
+0          0          0          i_hw_set[6]               
+0          0          0          i_hw_set[5]               
+0          0          0          i_hw_set[4]               
+0          0          0          i_hw_set[3]               
+0          0          0          i_hw_set[2]               
+0          0          0          i_hw_set[1]               
+0          0          0          i_hw_set[0]               
+0          0          0          i_hw_clear[31]            
+0          0          0          i_hw_clear[30]            
+0          0          0          i_hw_clear[29]            
+0          0          0          i_hw_clear[28]            
+0          0          0          i_hw_clear[27]            
+0          0          0          i_hw_clear[26]            
+0          0          0          i_hw_clear[25]            
+0          0          0          i_hw_clear[24]            
+0          0          0          i_hw_clear[23]            
+0          0          0          i_hw_clear[22]            
+0          0          0          i_hw_clear[21]            
+0          0          0          i_hw_clear[20]            
+0          0          0          i_hw_clear[19]            
+0          0          0          i_hw_clear[18]            
+0          0          0          i_hw_clear[17]            
+0          0          0          i_hw_clear[16]            
+0          0          0          i_hw_clear[15]            
+0          0          0          i_hw_clear[14]            
+0          0          0          i_hw_clear[13]            
+0          0          0          i_hw_clear[12]            
+0          0          0          i_hw_clear[11]            
+0          0          0          i_hw_clear[10]            
+0          0          0          i_hw_clear[9]             
+0          0          0          i_hw_clear[8]             
+0          0          0          i_hw_clear[7]             
+0          0          0          i_hw_clear[6]             
+0          0          0          i_hw_clear[5]             
+0          0          0          i_hw_clear[4]             
+0          0          0          i_hw_clear[3]             
+0          0          0          i_hw_clear[2]             
+0          0          0          i_hw_clear[1]             
+0          0          0          i_hw_clear[0]             
+0          0          0          i_value[31]               
+0          0          0          i_value[30]               
+0          0          0          i_value[29]               
+0          0          0          i_value[28]               
+0          0          0          i_value[27]               
+0          0          0          i_value[26]               
+0          0          0          i_value[25]               
+0          0          0          i_value[24]               
+0          0          0          i_value[23]               
+0          0          0          i_value[22]               
+0          0          0          i_value[21]               
+0          0          0          i_value[20]               
+0          0          0          i_value[19]               
+0          0          0          i_value[18]               
+0          0          0          i_value[17]               
+0          0          0          i_value[16]               
+0          0          0          i_value[15]               
+0          0          0          i_value[14]               
+0          0          0          i_value[13]               
+0          0          0          i_value[12]               
+0          0          0          i_value[11]               
+0          0          0          i_value[10]               
+0          0          0          i_value[9]                
+0          0          0          i_value[8]                
+0          0          0          i_value[7]                
+0          0          0          i_value[6]                
+0          0          0          i_value[5]                
+0          0          0          i_value[4]                
+0          0          0          i_value[3]                
+0          0          0          i_value[2]                
+0          0          0          i_value[1]                
+0          0          0          i_value[0]                
+0          0          0          i_mask[31]                
+0          0          0          i_mask[30]                
+0          0          0          i_mask[29]                
+0          0          0          i_mask[28]                
+0          0          0          i_mask[27]                
+0          0          0          i_mask[26]                
+0          0          0          i_mask[25]                
+0          0          0          i_mask[24]                
+0          0          0          i_mask[23]                
+0          0          0          i_mask[22]                
+0          0          0          i_mask[21]                
+0          0          0          i_mask[20]                
+0          0          0          i_mask[19]                
+0          0          0          i_mask[18]                
+0          0          0          i_mask[17]                
+0          0          0          i_mask[16]                
+0          0          0          i_mask[15]                
+0          0          0          i_mask[14]                
+0          0          0          i_mask[13]                
+0          0          0          i_mask[12]                
+0          0          0          i_mask[11]                
+0          0          0          i_mask[10]                
+0          0          0          i_mask[9]                 
+0          0          0          i_mask[8]                 
+0          0          0          i_mask[7]                 
+0          0          0          i_mask[6]                 
+0          0          0          i_mask[5]                 
+0          0          0          i_mask[4]                 
+0          0          0          i_mask[3]                 
+0          0          0          i_mask[2]                 
+0          0          0          i_mask[1]                 
+0          0          0          i_mask[0]                 
+0          0          0          o_value[31]               
+0          0          0          o_value[30]               
+0          0          0          o_value[29]               
+0          0          0          o_value[28]               
+0          0          0          o_value[27]               
+0          0          0          o_value[26]               
+0          0          0          o_value[25]               
+0          0          0          o_value[24]               
+0          0          0          o_value[23]               
+0          0          0          o_value[22]               
+0          0          0          o_value[21]               
+0          0          0          o_value[20]               
+0          0          0          o_value[19]               
+0          0          0          o_value[18]               
+0          0          0          o_value[17]               
+0          0          0          o_value[16]               
+0          0          0          o_value[15]               
+0          0          0          o_value[14]               
+0          0          0          o_value[13]               
+0          0          0          o_value[12]               
+0          0          0          o_value[11]               
+0          0          0          o_value[10]               
+0          0          0          o_value[9]                
+0          0          0          o_value[8]                
+0          0          0          o_value[7]                
+0          0          0          o_value[6]                
+0          0          0          o_value[5]                
+0          0          0          o_value[4]                
+0          0          0          o_value[3]                
+0          0          0          o_value[2]                
+0          0          0          o_value[1]                
+0          0          0          o_value[0]                
+0          0          0          o_value_unmasked[31]      
+0          0          0          o_value_unmasked[30]      
+0          0          0          o_value_unmasked[29]      
+0          0          0          o_value_unmasked[28]      
+0          0          0          o_value_unmasked[27]      
+0          0          0          o_value_unmasked[26]      
+0          0          0          o_value_unmasked[25]      
+0          0          0          o_value_unmasked[24]      
+0          0          0          o_value_unmasked[23]      
+0          0          0          o_value_unmasked[22]      
+0          0          0          o_value_unmasked[21]      
+0          0          0          o_value_unmasked[20]      
+0          0          0          o_value_unmasked[19]      
+0          0          0          o_value_unmasked[18]      
+0          0          0          o_value_unmasked[17]      
+0          0          0          o_value_unmasked[16]      
+0          0          0          o_value_unmasked[15]      
+0          0          0          o_value_unmasked[14]      
+0          0          0          o_value_unmasked[13]      
+0          0          0          o_value_unmasked[12]      
+0          0          0          o_value_unmasked[11]      
+0          0          0          o_value_unmasked[10]      
+0          0          0          o_value_unmasked[9]       
+0          0          0          o_value_unmasked[8]       
+0          0          0          o_value_unmasked[7]       
+0          0          0          o_value_unmasked[6]       
+0          0          0          o_value_unmasked[5]       
+0          0          0          o_value_unmasked[4]       
+0          0          0          o_value_unmasked[3]       
+0          0          0          o_value_unmasked[2]       
+0          0          0          o_value_unmasked[1]       
+0          0          0          o_value_unmasked[0]       
+0          0          0          w_sw_update[1]            
+0          0          0          w_sw_update[0]            
+0          0          0          w_sw_write_done           
+0          0          0          w_hw_update               
+0          0          0          w_trigger[1]              
+0          0          0          w_trigger[0]              
+0          0          0          w_read_data[31]           
+0          0          0          w_read_data[30]           
+0          0          0          w_read_data[29]           
+0          0          0          w_read_data[28]           
+0          0          0          w_read_data[27]           
+0          0          0          w_read_data[26]           
+0          0          0          w_read_data[25]           
+0          0          0          w_read_data[24]           
+0          0          0          w_read_data[23]           
+0          0          0          w_read_data[22]           
+0          0          0          w_read_data[21]           
+0          0          0          w_read_data[20]           
+0          0          0          w_read_data[19]           
+0          0          0          w_read_data[18]           
+0          0          0          w_read_data[17]           
+0          0          0          w_read_data[16]           
+0          0          0          w_read_data[15]           
+0          0          0          w_read_data[14]           
+0          0          0          w_read_data[13]           
+0          0          0          w_read_data[12]           
+0          0          0          w_read_data[11]           
+0          0          0          w_read_data[10]           
+0          0          0          w_read_data[9]            
+0          0          0          w_read_data[8]            
+0          0          0          w_read_data[7]            
+0          0          0          w_read_data[6]            
+0          0          0          w_read_data[5]            
+0          0          0          w_read_data[4]            
+0          0          0          w_read_data[3]            
+0          0          0          w_read_data[2]            
+0          0          0          w_read_data[1]            
+0          0          0          w_read_data[0]            
+0          0          0          w_value[31]               
+0          0          0          w_value[30]               
+0          0          0          w_value[29]               
+0          0          0          w_value[28]               
+0          0          0          w_value[27]               
+0          0          0          w_value[26]               
+0          0          0          w_value[25]               
+0          0          0          w_value[24]               
+0          0          0          w_value[23]               
+0          0          0          w_value[22]               
+0          0          0          w_value[21]               
+0          0          0          w_value[20]               
+0          0          0          w_value[19]               
+0          0          0          w_value[18]               
+0          0          0          w_value[17]               
+0          0          0          w_value[16]               
+0          0          0          w_value[15]               
+0          0          0          w_value[14]               
+0          0          0          w_value[13]               
+0          0          0          w_value[12]               
+0          0          0          w_value[11]               
+0          0          0          w_value[10]               
+0          0          0          w_value[9]                
+0          0          0          w_value[8]                
+0          0          0          w_value[7]                
+0          0          0          w_value[6]                
+0          0          0          w_value[5]                
+0          0          0          w_value[4]                
+0          0          0          w_value[3]                
+0          0          0          w_value[2]                
+0          0          0          w_value[1]                
+0          0          0          w_value[0]                
+
+</PRE>
+<A NAME="_Fsmcov"></A>
+<P class="detail_title">     Uncovered Fsm Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.mem_ctrl_inst.CSR_registers_inst.g_CE_FFE_REG.g_CE_FFE_REG.u_bit_field<BR>
+<B>Type name: </B>rggen_bit_field<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_bit_field.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_bit_field.v</A><BR>
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+
+0 items found
+
+</PRE>
+<A NAME="_Assertioncov"></A>
+<P class="detail_title">     Uncovered Assertion Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.mem_ctrl_inst.CSR_registers_inst.g_CE_FFE_REG.g_CE_FFE_REG.u_bit_field<BR>
+<B>Type name: </B>rggen_bit_field<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_bit_field.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_bit_field.v</A><BR><B>Number of uncovered assertions: </B>0 of 0<BR>
+
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+Finished Failed Assertion                      Line  Source Code                    
+------------------------------------------------------------------------------------
+
+0 items found
+
+</PRE>
+<A NAME="_CoverGroupcov"></A>
+<P class="detail_title">     Covered+Uncovered+Excluded+UNR CoverGroup Detail Report, Instance Based</P>
+<P class="fs"><A STYLE="float: right" class="namet" HREF="#_topcov">To Top</A></P><BR>
+
+<TABLE class="detail_header"><TR class="detail"><TD>
+<B>Instance name: </B>zmc_axi4_top.mem_ctrl_inst.CSR_registers_inst.g_CE_FFE_REG.g_CE_FFE_REG.u_bit_field<BR>
+<B>Type name: </B>rggen_bit_field<BR>
+<B>File name: </B><A HREF="/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_bit_field.v" TARGET="_blank">/home/sgeuser33/Prajwal/memory_controller_with_ECC/MEM_ctrl_AXI/rggen_files/rggen_bit_field.v</A><BR><B>Number of covered cover bins: </B>0 of 0<BR>
+<B>Number of uncovered cover bins: </B>0 of 0<BR>
+<B>Number of excluded cover bins: </B>0<BR>
+
+
+</TD></TR></TABLE>
+
+</TD></TR></TABLE>
+
+<PRE class="detail_report_text">
+
+0 items found
+
+</PRE>

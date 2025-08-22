@@ -93,7 +93,7 @@ class mc_wrap_burst_sequence extends uvm_sequence#(mc_axi_seq_item);
     // Write operation with wrap burst
     if (scenario == 4)
         begin
-        for (int i = 0; i < 4; i++) 
+        for (int i = 0; i < 10; i++) 
          begin
            `uvm_info(get_type_name(),$sformatf("Write scenario 4 Started - Transaction %0d", i),UVM_MEDIUM)
                         
@@ -134,7 +134,7 @@ class mc_wrap_burst_sequence extends uvm_sequence#(mc_axi_seq_item);
     // Read operation with wrap burst
     if (scenario == 5)
         begin
-        for (int i = 0; i < 4; i++) 
+        for (int i = 0; i < 10; i++) 
          begin
            `uvm_info(get_type_name(),$sformatf("Read scenario 5 Started - Transaction %0d", i),UVM_MEDIUM) 
                          

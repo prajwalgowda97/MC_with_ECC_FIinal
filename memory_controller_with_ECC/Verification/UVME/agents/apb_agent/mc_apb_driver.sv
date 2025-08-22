@@ -15,13 +15,13 @@ class mc_apb_driver extends uvm_driver #(mc_apb_seq_item);
     function void build_phase(uvm_phase phase);
         super.build_phase(phase);
 
-        apb_seq_item = mc_apb_seq_item::type_id::create("apb_seq_item",this);
+        //apb_seq_item = mc_apb_seq_item::type_id::create("apb_seq_item",this);
   if(!uvm_config_db#(virtual mc_apb_interface)::get(this,"*","mc_apb_interface",apb_intf))
       `uvm_fatal(get_full_name(),"unable to get interface in read driver")
     endfunction
 
 //run phase
-    virtual task run_phase(uvm_phase phase);
+    task run_phase(uvm_phase phase);
         super.run_phase (phase);
     
     forever begin
